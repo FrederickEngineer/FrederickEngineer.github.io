@@ -1,0 +1,861 @@
+body {
+    /* 本文フォント設定 */
+    font-family: 'Noto Serif JP', sans-serif;
+    /* font-size: 24px; */
+    color: #121212;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.MilkPage header {
+    /* 375 * 486 */
+    height: 486px;
+    width: 375px;
+    background: url(../images/mv-sp.jpg) no-repeat center top/cover;
+    position: relative;
+}
+
+.MilkPage header h1 img {
+    margin: 19px 19px;
+    width: 100px;
+    height: 50px;
+}
+
+
+.MilkPage header nav {
+    width: 40px;
+    height: 40px;
+    background-color: #262626;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MilkPage header .mail {
+    position: absolute;
+    left: 80vw;
+    top: 19px;
+}
+
+.MilkPage header .mail img {
+    width: 19px;
+    height: 16px;
+}
+
+.headerword {
+    margin: 250px 0px 0px 19px;
+    line-height: 68px;
+}
+
+.headerword .word1 {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 14px 17px 15px 16px;
+    font-weight: bold
+}
+
+.headerword .word2 {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 14px 17px 15px 16px;
+    font-weight: bold
+}
+
+/* - CONCEPT - */
+.conceptArea {
+    text-align: center;
+}
+
+.conceptTitle {
+    text-align: center;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 50px;
+
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+    justify-content: center;
+    /* 文字を中央寄せ */
+}
+
+.conceptTitle::before,
+.conceptTitle::after {
+    background-color: #000000;
+    /* 横線の色 */
+    content: "";
+    height: 2px;
+    /* 横線の高さ */
+    width: 10px;
+    /* 横線の長さ */
+}
+
+.conceptTitle::before {
+    margin-right: 15px;
+    /* 文字との余白 */
+}
+
+.conceptTitle::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+.conceptArea h2 {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 31px;
+    line-height: 34px;
+}
+
+.conceptArea p {
+    font-family: 'Noto Serif JP', sans-serif;
+    margin: 26px 28px 0px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 24px;
+}
+
+
+.conceptArea img {
+    width: 319px;
+    height: 221px;
+    margin-top: 20px;
+}
+
+.conceptAndmenu img {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* - MENU - */
+.menuArea {
+    text-align: center;
+    background-color: #F4F4F4;
+    padding-top: 52px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.menuArea h1 {
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+    justify-content: center;
+    /* 文字を中央寄せ */
+}
+
+.menuArea h1::before,
+.menuArea h1::after {
+    background-color: #000000;
+    /* 横線の色 */
+    content: "";
+    height: 2px;
+    /* 横線の高さ */
+    width: 10px;
+    /* 横線の長さ */
+}
+
+.menuArea h1::before {
+    margin-right: 15px;
+    /* 文字との余白 */
+}
+
+.menuArea h1::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+
+.menuArea .Area h2,
+.menuArea .Area-reverse h2 {
+    text-align: center;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 22px;
+}
+
+
+.menuArea .Area,
+.menuArea .Area-reverse {
+    font-family: 'Noto Serif JP', sans-serif;
+    height: 456px;
+    width: 338px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.menuArea .Area p,
+.menuArea .Area-reverse p {
+    font-size: 14px;
+    margin: 10px 19px 0px 19px;
+}
+
+.menuArea .Area .viewMore,
+.menuArea .Area-reverse .viewMore {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 14px;
+    color: #262626;
+    opacity: 0.5;
+    position: relative;
+    display: inline-block;
+    padding-left: 32px;
+    margin-left: 18px;
+    margin-top: 27px;
+}
+
+.menuArea .Area .viewMore:before,
+.menuArea .Area-reverse .viewMore:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #262626;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.menuArea .Area .viewMore:after,
+.menuArea .Area-reverse .viewMore:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+    margin: auto;
+}
+
+.menuArea .Area .img-box,
+.menuArea .Area-reverse .img-box {
+    text-align: center;
+}
+
+.menuArea .Area img,
+.menuArea .Area-reverse img {
+    width: 319px;
+    height: 220px;
+
+}
+
+/* NEWS */
+
+.newsArea {
+    text-align: center;
+}
+
+.newsArea .new {
+    position: relative;
+    display: inline-block;
+}
+
+.newsArea .new a {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 14px;
+
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid #929292;
+
+    width: 61px;
+    height: 61px;
+    line-height: 61px;
+
+}
+
+.newsArea h1 {
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 22px;
+
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+    justify-content: center;
+    /* 文字を中央寄せ */
+}
+
+.newsArea h1::before,
+.newsArea h1::after {
+    background-color: #000000;
+    /* 横線の色 */
+    content: "";
+    height: 2px;
+    /* 横線の高さ */
+    width: 10px;
+    /* 横線の長さ */
+}
+
+.newsArea h1::before {
+    margin-right: 15px;
+    /* 文字との余白 */
+}
+
+.newsArea h1::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+.newsArea section img {
+    height: 221px;
+    width: 319px;
+    margin: 39px 28px 0px 28px;
+}
+
+.newsArea section h2 {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0px 0px 28px;
+}
+
+.newsArea section p {
+    font-size: 14px;
+    color: #929292;
+    text-align: left;
+    margin: 16px 0px 0px 28px;
+}
+
+.newsArea section p .datetime {
+    position: relative;
+    top: 1.5px;
+}
+
+.newsArea section p .info {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 12px;
+    color: #000000;
+    border: 1.5px solid #000000;
+    padding: 2px 7px;
+    margin-left: 10px;
+
+}
+
+.newsArea .VIEWMORE {
+    position: relative;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 20px 110px;
+    margin: 58px 28px;
+}
+
+.newsArea .VIEWMORE::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 2px dashed #fff;
+    border-right: 2px dashed #fff;
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 26px 0px 0px 290px;
+}
+
+/* SHOP */
+
+.shopArea {
+    text-align: center;
+    background-color: #F4F4F4;
+    height: 393px;
+}
+
+.shopArea h1 {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 28px;
+    padding-top: 51px;
+    padding-bottom: 32px;
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+    justify-content: center;
+    /* 文字を中央寄せ */
+}
+
+.shopArea h1::before,
+.shopArea h1::after {
+    background-color: #000000;
+    /* 横線の色 */
+    content: "";
+    height: 2px;
+    /* 横線の高さ */
+    width: 10px;
+    /* 横線の長さ */
+}
+
+.shopArea h1::before {
+    margin-right: 15px;
+    /* 文字との余白 */
+}
+
+.shopArea h1::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+.shopArea section {
+    margin-left: 19px;
+    margin-right: 19px;
+    border-top: 1px solid #e7e2e2;
+}
+
+.shopArea section h2 {
+    font-family: 'EB Garamond', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 14px;
+}
+
+.shopArea section p {
+    font-family: 'Noto Serif JP', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 17px;
+}
+
+.shopArea .businesshours {
+    border-bottom: 1px solid #e7e2e2;
+}
+
+/* CONTACT */
+
+.contactArea {
+    position: relative;
+    background-color: #211D1A;
+    width: 100%;
+    height: 503px;
+    text-align: center;
+}
+
+.contactArea div img {
+    width: 375px;
+    height: 171px;
+}
+
+.contactArea section {
+    position: absolute;
+    background-color: #ffffff;
+    top: 154px;
+    left: 18px;
+    width: 330px;
+    height: 331px;
+}
+
+.contactArea section h1 {
+    font-family: 'EB Garamond', sans-serif;
+    padding-top: 51px;
+    padding-bottom: 23px;
+    font-size: 28px;
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+    justify-content: center;
+    /* 文字を中央寄せ */
+}
+
+.contactArea section h1::before,
+.contactArea section h1::after {
+    background-color: #000000;
+    /* 横線の色 */
+    content: "";
+    height: 2px;
+    /* 横線の高さ */
+    width: 10px;
+    /* 横線の長さ */
+}
+
+.contactArea section h1::before {
+    margin-right: 15px;
+    /* 文字との余白 */
+}
+
+.contactArea section h1::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+
+.contactArea section p {
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 0px auto;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.contactArea section .questionfome {
+    white-space: nowrap;
+    position: relative;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 27px 70px 27px 70px;
+    margin: 33px 18px 0px 18px;
+}
+
+.contactArea section .questionfome::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 2px dashed #fff;
+    border-right: 2px dashed #fff;
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 33px 0px 0px 263px;
+}
+
+/* mainfooter */
+.mainfooter {
+    text-align: center;
+}
+
+.mainfooter div img {
+    margin-top: 79px;
+    width: 150px;
+    height: 75px;
+}
+
+.mainfooter section {
+    margin-top: 51px;
+    margin-bottom: 131px;
+}
+
+.mainfooter section a {
+    display: block;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 14px;
+    margin-top: 11px;
+    font-weight: bold
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-top: 1px solid #e7e2e2;
+}
+
+@media screen and (min-width:376px) {
+    .MilkPage header {
+        /* 375 * 486 */
+        width: 100vw;
+        height: 768px;
+        background: url(../images/mv.jpg) no-repeat center top/cover;
+    }
+
+    .MilkPage header h1 img {
+        margin: 60px 60px;
+        width: 200px;
+        height: 100px;
+    }
+
+    .MilkPage header nav {
+        width: 61px;
+        height: 61px;
+    }
+
+    .MilkPage header .mail {
+        position: absolute;
+        left: 93vw;
+        top: 35px;
+    }
+
+    .MilkPage header .mail img {
+        width: 30px;
+        height: 25px;
+    }
+
+    .headerword {
+        margin: 300px 700px 60px 60px;
+        line-height: 75px;
+    }
+
+    .headerword .word1 {
+        font-size: 28px;
+        background-color: #ffffff;
+        padding: 14px 17px 15px 16px;
+        font-weight: bold
+    }
+
+    .headerword .word2 {
+        font-size: 28px;
+        background-color: #ffffff;
+        padding: 14px 17px 15px 16px;
+        font-weight: bold
+    }
+
+    /* - CONCEPT - */
+    .conceptArea {
+        display: flex;
+    }
+
+    .conceptTitle {
+        font-size: 44px;
+        margin-top: 100px;
+    }
+
+    .conceptArea .concepttextArea {
+        margin: 122px 95px 0px 120px;
+        padding: 0px;
+        width: 50%;
+    }
+
+    .conceptArea .concepttextArea h2 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .conceptArea .concepttextArea p {
+        margin: 26px 0px 0px 0px;
+        font-size: 14px;
+    }
+
+    .conceptArea .conceptimageArea {
+        margin: 0px 121px 0px 0px;
+        width: 50%;
+    }
+
+    .conceptArea .conceptimageArea img {
+        width: 650px;
+        height: 450px;
+    }
+
+    .conceptTitle::before,
+    .conceptTitle::after {
+        width: 15px;
+        /* 横線の長さ */
+    }
+
+    /* MENU */
+    .menuArea h1 {
+        font-size: 44px;
+        margin-bottom: 68px;
+    }
+
+    .menuArea .Area {
+        display: flex;
+        width: 1125px;
+        height: 510px;
+    }
+
+    .menuArea .Area-reverse {
+        /* 逆順のFlexbox */
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1125px;
+        height: 510px;
+    }
+
+    .menuArea .Area img {
+        width: 625px;
+        height: 432px;
+        margin: 40px 0px 38px 40px;
+    }
+
+    .menuArea .Area-reverse img {
+        width: 625px;
+        height: 432px;
+        margin: 40px 40px 38px 0px;
+    }
+
+    .menuArea .Area .text-box {
+        margin: 162px 79px 180px 80px;
+    }
+
+    .menuArea .Area-reverse .text-box {
+        margin: 162px 80px 180px 79px;
+    }
+
+    .menuArea .Area h2,
+    .menuArea .Area-reverse h2 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .menuArea .Area p,
+    .menuArea .Area-reverse p {
+        margin: 0px;
+    }
+
+    .menuArea .Area .viewMore,
+    .menuArea .Area-reverse .viewMore {
+        margin-left: 0px;
+    }
+
+    .menuArea h1::before,
+    .menuArea h1::after {
+        width: 15px;
+        /* 横線の長さ */
+    }
+
+    /* NEWS */
+    .newsArea h1 {
+        font-size: 44px;
+        margin-top: 104px;
+    }
+
+    .newsArea section,
+    .newsArea .new {
+        display: inline-block;
+    }
+
+    .newsArea .VIEWMORE {
+        width: 400px;
+        margin-left: 483px;
+    }
+
+    .newsArea .VIEWMORE::after {
+        left: 80px;
+    }
+
+    .newsArea h1::before,
+    .newsArea h1::after {
+        width: 15px;
+        /* 横線の長さ */
+    }
+
+    /* SHOP */
+    .shopArea h1 {
+        font-size: 44px;
+    }
+
+    .shopArea section {
+        display: flex;
+        text-align: center;
+        margin: 0px 400px;
+    }
+
+    .shopArea section h2,
+    .shopArea section p {
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    .shopArea section h2 {
+        text-align: left;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        margin-right: 100px;
+    }
+
+    .shopArea section p {
+        text-align: left;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    .shopArea section .shopAreatell {
+        margin-right: 150px;
+    }
+
+    .shopArea section .shopAreaopenclose {
+        margin-right: 60px;
+    }
+
+    .shopArea h1::before,
+    .shopArea h1::after {
+        width: 15px;
+        /* 横線の長さ */
+    }
+
+    /* CONTACT */
+
+    .contactArea div img {
+        width: 100%;
+        height: 622px;
+    }
+
+    .contactArea section {
+        top: 100px;
+        left: 311px;
+        width: 744px;
+        height: 422px;
+    }
+
+    .contactArea section p {
+        font-family: 'Noto Serif JP', sans-serif;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .contactArea section h1::before,
+    .contactArea section h1::after {
+        height: 1px;
+        width: 15px;
+        /* 横線の長さ */
+    }
+
+    .contactArea section h1 {
+        font-size: 44px;
+    }
+
+    .contactArea section .questionfome {
+        padding: 27px 70px 27px 70px;
+        margin: 33px 172px 0px 172px;
+    }
+
+    .contactArea section .questionfome::after {
+        margin: 33px 0px 0px 350px;
+    }
+
+
+
+    /* mainfooter */
+    .mainfooter div img {
+        margin-top: 200px;
+        width: 250px;
+        height: 125px;
+    }
+
+    .mainfooter section a {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .mainfooter section {
+        margin-right: 40px;
+    }
+
+}
