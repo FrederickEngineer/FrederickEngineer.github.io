@@ -1,0 +1,1269 @@
+body {
+  /* 本文フォント設定 */
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  color: #121212;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+/* header */
+header {
+  position: relative;
+  left: 109px;
+  height: 410px;
+  width: 266px;
+  background: url(../images/mv-1.jpg) no-repeat center top/cover;
+  border-radius: 0px 0px 0px 32px;
+  z-index: 0;
+}
+
+/* 見直し必要（ハンバーガーメニューの位置） */
+#humberger {
+  position: relative;
+  bottom: 0px;
+
+  z-index: 1;
+  top: 18px;
+}
+
+#humberger div {
+  position: absolute;
+  height: 4px;
+  width: 24px;
+  left: 222px;
+  background-color: #00B21B;
+  border-radius: 2px;
+}
+
+#humberger div:nth-of-type(1) {
+  top: 20px;
+}
+
+#humberger div:nth-of-type(2) {
+  top: 10px;
+}
+
+#humberger div:nth-of-type(3) {
+  top: 0;
+}
+
+.img-logo-b img {
+  position: relative;
+  right: 109px;
+  height: 18px;
+  width: 89px;
+  top : 10px;
+  margin-left: 20px;
+}
+
+/* Body Make */
+.BodyMake {
+  position: relative;
+  right: 80px;
+  top: 120px;
+  line-height: 45px;
+}
+
+.BodyMake p {
+  font-family: 'Josefin Sans', Italic;
+  font-size: 42px;
+  font-style: italic;
+  position: absolute;
+}
+
+.BodyMake p:nth-of-type(1) {
+  background-color: #FFFFFF;
+  width: 240px;
+  height: 43px;
+}
+
+.BodyMake p:nth-of-type(2) {
+  background-color: #FFFFFF;
+  top: 40px;
+  width: 176px;
+  height: 50px;
+}
+
+.GirlsTraining {
+  position: relative;
+  width: 215px;
+  top: 223px;
+  right: 80px;
+  font-size: 10px;
+}
+
+.GirlsTraining p {
+  font-family: "Hiragino Sans W7";
+  background-color: #FFFFFF;
+  font-weight: 700;
+}
+
+.CounselingLink {
+  position: relative;
+  top: 250px;
+  right: 80px;
+
+  font-size: 13px;
+}
+
+.CounselingLink a {
+  font-family: "Hiragino Sans W7";
+  color: #FFFFFF;
+  background-color: #00B21B;
+  padding: 13px 15px;
+  border-radius: 34px;
+  font-weight: 700;
+}
+
+.NoBodyNoLife {
+  position: relative;
+  top: 333px;
+  right: 30px;
+}
+
+.NoBodyNoLife p {
+  color: #00B21B;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: italic;
+  font-family: Josefin Sans;
+  
+}
+
+.AITraining {
+  position: relative;
+  top: 330px;
+  right: 30px;
+}
+
+.AITraining p {
+  color: #00B21B;
+  font-weight: 700;
+}
+
+/* main */
+
+main .text {
+  width: 335px;
+  height: 177px;
+  margin: 135px 20px 0px 20px;
+  font-size: 13px;
+}
+
+main .AI-img img {
+  width: 375px;
+  height: 216px;
+}
+
+main .AI-text-box {
+  position: relative;
+  bottom: 20px;
+  width: 328px;
+  height: 370px;
+  margin-left: 27px;
+  box-shadow: 0px 0px 20px #00000019;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+main .AI-text-box h1 {
+  position: relative;
+  width: 200px;
+  top: 40px;
+  left: 30px;
+  font-size: 18px;
+  color: #00B21B;
+  font-weight: bolder;
+}
+
+main .AI-text-box h2 {
+  position: relative;
+  width: 300px;
+  top: 50px;
+  left: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main .AI-text-box p {
+  position: relative;
+  top: 70px;
+  left: 30px;
+
+  width: 268px;
+  height: 228px;
+
+  font-size: 12px;
+  font-weight: 300;
+}
+
+main .CounselingLink-main-1 {
+  position: relative;
+  width: 250px;
+  top: 40px;
+  left: 60px;
+
+  font-size: 13px;
+}
+
+main .CounselingLink-main-1 a {
+  font-family: "Hiragino Sans W7";
+  color: #FFFFFF;
+  background-color: #00B21B;
+  padding: 16px 25px;
+  border-radius: 34px;
+  font-weight: 700;
+}
+
+/* Our Trainer */
+
+main .wave-before-1 img {
+  width: 375px;
+  margin-top: 90px;
+}
+
+main .Our-Trainer {
+  background-color: #00B21B;
+  width: 375px;
+  height: 1532px;
+}
+
+main .Our-Trainer h1 {
+  font-size: 40px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+main .Our-Trainer h2 {
+  font-size: 14px;
+
+  margin-left: 20px;
+  margin-right: 19.5px;
+  padding-bottom: 63px;
+
+  color: #FFFFFF;
+  font-weight: 700;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+main .Our-Trainer .Our-Trainer-1 div img,
+main .Our-Trainer .Our-Trainer-2 div img,
+main .Our-Trainer .Our-Trainer-3 div img {
+  width: 334px;
+  height: 325px;
+  margin-left: 20.5px;
+  margin-top: 20.5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .Our-Trainer .Our-Trainer-1 section,
+main .Our-Trainer .Our-Trainer-2 section,
+main .Our-Trainer .Our-Trainer-3 section {
+  width: 334px;
+  height: 101px;
+  margin-left: 20.5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+main .Our-Trainer .Our-Trainer-1 section p,
+main .Our-Trainer .Our-Trainer-2 section p,
+main .Our-Trainer .Our-Trainer-3 section p {
+  font-size: 12px;
+  font-weight: 300;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+main .wave-after-1 img {
+  width: 375px;
+  transform: scale(-1, -1);
+}
+
+/* Studio */
+
+main .Studio h1 {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+main .Studio h2 {
+  font-size: 14px;
+
+  margin-left: 20px;
+  margin-right: 19.5px;
+  color: #00B21B;
+  font-weight: 700;
+}
+
+main .Studio img {
+  width: 335px;
+  height: 202px;
+
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+/* Price */
+main .wave-before-2 img {
+  width: 375px;
+  margin-top: 40px;
+}
+
+main .Price {
+  background-color: #00B21B;
+  width: 375px;
+  height: 1684px;
+}
+
+main .Price h1 {
+  font-size: 40px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+main .Price h2 {
+  font-size: 14px;
+
+  margin-left: 20px;
+  margin-right: 19.5px;
+  padding-bottom: 37px;
+
+  color: #FFFFFF;
+  font-weight: 600;
+
+}
+
+main .Price .Course {
+  background-color: #FFFFFF;
+  width: 335px;
+  height: 492px;
+
+  margin-left: 20px;
+  margin-bottom: 40px;
+
+  border-radius: 10px;
+}
+
+
+/* 週１コース */
+/* 1行目  */
+
+main .Price .Course section:nth-of-type(1) {
+  padding-left: 42.5px;
+  padding-right: 42.5px;
+
+}
+
+main .Price .Course section:nth-of-type(1) p:nth-of-type(1) {
+  font-size: 26px;
+  font-weight: 600;
+
+  color: #00B21B;
+  padding-top: 35px;
+  padding-left: 62px;
+}
+
+main .Price .Course section:nth-of-type(1) p:nth-of-type(2) {
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  height: 55px;
+  padding-left: 31px;
+}
+
+main .Price .Course section:nth-of-type(1) p:nth-of-type(3) {
+  font-size: 16px;
+  font-weight: 300;
+
+  padding-left: 51px;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* 2行目 */
+
+main .Price .Course section:nth-of-type(2) {
+  padding-left: 42.5px;
+  padding-right: 42.5px;
+}
+
+main .Price .Course section:nth-of-type(2) p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-left: 90px;
+}
+
+main .Price .Course section:nth-of-type(2) p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* 3行目 */
+
+main .Price .Course section:nth-of-type(3) {
+  padding-left: 42.5px;
+  padding-right: 42.5px;
+}
+
+main .Price .Course section:nth-of-type(3) p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-left: 81px;
+}
+
+main .Price .Course section:nth-of-type(3) p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 93px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* 4行目 */
+
+main .Price .Course section:nth-of-type(4) {
+  padding-left: 42.5px;
+  padding-right: 42.5px;
+}
+
+main .Price .Course section:nth-of-type(4) p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-left: 81px;
+}
+
+main .Price .Course section:nth-of-type(4) p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 109px;
+}
+
+/* 無制限の微調整 */
+main .Price .Course:nth-of-type(3) section:nth-of-type(1) p:nth-of-type(1) {
+  padding-top: 20px;
+  padding-left: 88px;
+}
+
+/* オススメ */
+
+main .Price .Recommendation {
+  width: 256px;
+  height: 45px;
+
+  position: relative;
+  bottom: 1090px;
+  left: 59px;
+
+  border: 1px solid #000;
+
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+
+}
+
+main .Price .Recommendation p {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00B21B;
+}
+
+
+/* 週３コース */
+main .Price .Course:nth-of-type(4) {
+  margin-top: 19px;
+}
+
+
+/* 波 */
+main .wave-after-2 img {
+  width: 375px;
+  transform: scale(-1, -1);
+}
+
+
+
+/* FAQ */
+
+
+main .FAQ h1 {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+main .FAQ h2 {
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: 600;
+  color: #00B21B;
+}
+
+
+main .FAQ section section {
+  display: flex;
+}
+
+main .FAQ section section h3 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00B21B;
+}
+
+main .FAQ section .Question p {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+main .FAQ section .Answer p {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+main .FAQ section:nth-child(3) {
+  margin-left: 19px;
+  margin-right: 19px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+main .FAQ section:nth-child(4) {
+  margin-left: 19px;
+  margin-right: 19px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+main .FAQ section:nth-child(5) {
+  margin-left: 19px;
+  margin-right: 19px;
+  padding-bottom: 10px;
+}
+
+/* footer */
+
+footer div img {
+  width: 375px;
+  height: 180px;
+}
+
+footer .Background {
+  background-color: #00B21B;
+  height: 150px;
+}
+
+footer .Background div {
+  position: relative;
+
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 24px;
+  top: 45px;
+  left: 35px;
+}
+
+footer .Background div a {
+  color: #00B21B;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+footer .BackgroundAbcgym {
+  background-color: #111111;
+  width: 375px;
+  height: 110px;
+}
+
+footer .BackgroundAbcgym img {
+  position: relative;
+
+  width: 99px;
+  height: 20px;
+
+  top: 50px;
+  left: 140px;
+}
+
+/* > */
+footer div .TopReturn:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 216px;
+  margin-top: 56px;
+}
+
+footer div .TopReturn:after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-top: solid 2px #00B21B;
+  border-right: solid 2px #00B21B;
+  transform: rotate(314deg);
+  position: absolute;
+  margin-left: 230px;
+  margin-top: 72px;
+}
+
+header .menu,
+footer .menu{
+  display: none;
+}
+
+/* PCサイト用 */
+
+@media screen and (min-width:376px) {
+  header {
+    left: 380px;
+    height: 680px;
+    width: 1060px;
+  }
+
+  /* img-logo-b */
+  .img-logo-b img {
+    position: relative;
+    right: 372px;
+    height: 40px;
+    width: 198px;
+    top:-40px;
+  }
+
+  /* ハンバーガーメニュー→navへ */
+  #humberger {
+    display: none;
+    top:100px;
+    z-index: 2;
+  }
+
+  header .menu{
+    display: block;
+  }
+
+ /* header,footer共通 */
+  .menu ul {
+    display: flex;
+  }
+
+  .menu ul li {
+    height: 28px;
+    margin-top: 40px;   
+  }
+
+  .menu ul li:nth-of-type(1){
+    margin-left: 360px;
+  }
+
+  .menu ul li:nth-of-type(2),
+  .menu ul li:nth-of-type(3),
+  .menu ul li:nth-of-type(4),
+  .menu ul li:nth-of-type(5){
+    margin-left: 36px;
+  }
+
+  .menu ul li a {
+    font-family: "Josefin Sans";
+    font-size: 28px;
+    font-weight: bold;
+    color: #00B21B;
+  }
+
+  footer .menu ul li a {
+    color: #FFFFFF;
+  }
+
+  /* Body Make */
+  .BodyMake {
+    right: 231px;
+    top: 100px;
+    line-height: 100px;
+  }
+
+  .BodyMake p {
+    font-size: 90px;
+  }
+
+  .BodyMake p:nth-of-type(1) {
+    width: 500px;
+    height: 93px;
+  }
+
+  .BodyMake p:nth-of-type(2) {
+    top: 100px;
+    width: 376px;
+    height: 93px;
+  }
+
+  /* 女性限定 */
+  .GirlsTraining {
+    top: 328px;
+    right: 231px;
+    font-size: 28px;
+    width: 522px;
+  }
+
+  .GirlsTraining p {
+    background-color: #FFFFFF;
+    font-weight: 700;
+  }
+
+  /* 無料カウンセリング */
+  .CounselingLink {
+    top: 370px;
+    right: 231px;
+    ;
+
+    font-size: 14px;
+  }
+
+  .CounselingLink a {
+    font-family: "Hiragino Sans W7";
+    color: #FFFFFF;
+    background-color: #00B21B;
+    padding: 22px 46px;
+    border-radius: 34px;
+    font-weight: 700;
+  }
+
+  /* NoBodyNoLife */
+  .NoBodyNoLife {
+    top: 510px;
+    right: 139px;
+  }
+
+  .NoBodyNoLife p {
+    font-size: 108px;
+    font-weight: bold;
+  }
+
+  .AITraining {
+    top: 540px;
+    left: 55px;
+    width: 500px;
+  }
+
+  .AITraining p {
+    font-size: 32px;
+
+  }
+
+  /* main */
+  main .text {
+    text-align: center;
+    width: 780px;
+    margin: 160px 304px 0px 300px;
+    font-size: 16px;
+  }
+
+  main .AI-img img {
+    width: 950px;
+    height: 550px;
+  }
+
+  main .AI-text-box {
+    bottom: 463px;
+    width: 555px;
+    height: 495px;
+    margin-left: 860px;
+  }
+
+  main .AI-text-box h1 {
+    left: 60px;
+    font-size: 24px;
+    width: 400px;
+  }
+
+  main .AI-text-box h2 {
+    left: 60px;
+    font-size: 32px;
+    width: 500px;
+  }
+
+  main .AI-text-box p {
+    position: relative;
+
+    left: 60px;
+
+    width: 435px;
+    height: 218px;
+
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  /* 逆順 */
+  main .AI-img:nth-of-type(3) {
+    position: relative;
+    bottom: 360px;
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+
+  main .AI-text-box:nth-of-type(4) {
+    position: relative;
+    bottom: 816px;
+    width: 555px;
+    height: 495px;
+    margin-left: 27px;
+  }
+
+  /* ボタン非表示 */
+  main .CounselingLink-main-1 {
+    display: none;
+  }
+
+  main .CounselingLink-main-1 a {
+    display: none;
+  }
+
+  /* Our Trainer */
+
+  main .wave-before-1 img {
+    position: relative;
+    bottom: 695px;
+    width: 1440px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  main .Our-Trainer {
+    position: relative;
+    bottom: 700px;
+    width: 1440px;
+    height: 744px;
+  }
+
+  main .Our-Trainer h1 {
+    font-size: 64px;
+    margin-left: 135px;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+
+  main .Our-Trainer h2 {
+    font-size: 20px;
+
+    margin-left: 135px;
+    margin-right: 130px;
+    padding-bottom: 63px;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    border-bottom: 2px solid #FFFFFF;
+  }
+
+
+  main .Our-Trainer .Our-Trainer-1,
+  main .Our-Trainer .Our-Trainer-2,
+  main .Our-Trainer .Our-Trainer-3 {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  main .Our-Trainer .Our-Trainer-1 {
+    margin-left: 135px;
+  }
+
+  main .Our-Trainer .Our-Trainer-1 div img,
+  main .Our-Trainer .Our-Trainer-2 div img,
+  main .Our-Trainer .Our-Trainer-3 div img {
+    width: 360px;
+    height: 350px;
+  }
+
+  main .Our-Trainer .Our-Trainer-1 section,
+  main .Our-Trainer .Our-Trainer-2 section,
+  main .Our-Trainer .Our-Trainer-3 section {
+    width: 360px;
+    height: 120px;
+  }
+
+  main .Our-Trainer .Our-Trainer-1 section p,
+  main .Our-Trainer .Our-Trainer-2 section p,
+  main .Our-Trainer .Our-Trainer-3 section p {
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  main .wave-after-1 img {
+    position: relative;
+    bottom: 702px;
+    width: 1440px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  /* Studio */
+
+  main .Studio {
+    position: relative;
+    bottom: 700px;
+  }
+
+  main .Studio h1 {
+    font-size: 64px;
+    margin-left: 165px;
+  }
+
+  main .Studio h2 {
+    font-size: 25px;
+
+    margin-left: 165px;
+  }
+
+  main .Studio img {
+    width: 1100px;
+    height: 670px;
+
+    margin-left: 165px;
+    margin-top: 40px;
+  }
+
+  /* Price */
+  main .wave-before-2 img {
+    position: relative;
+    width: 1440px;
+    bottom: 595px;
+  }
+
+  main .Price {
+    position: relative;
+    width: 1440px;
+    height: 651px;
+    bottom: 600px;
+  }
+
+  main .Price h1 {
+    font-size: 64px;
+    margin-left: 165px;
+  }
+
+  main .Price h2 {
+    font-size: 20px;
+    margin-left: 165px;
+    margin-right: 19.5px;
+  }
+
+  main .Price .Course {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 435px;
+
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+
+  /* 1つ目だけ */
+  main .Price .Course:nth-of-type(1) {
+    margin-left: 165px;
+  }
+
+
+  /* 週１コース */
+  /* 1行目  */
+
+  main .Price .Course section:nth-of-type(1) {
+    padding-left: 42.5px;
+    padding-right: 42.5px;
+
+  }
+
+  main .Price .Course section:nth-of-type(1) p:nth-of-type(1) {
+    font-size: 26px;
+    font-weight: 600;
+
+    color: #00B21B;
+    padding-top: 20px;
+    padding-left: 62px;
+  }
+
+  main .Price .Course section:nth-of-type(1) p:nth-of-type(2) {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    height: 55px;
+    padding-left: 31px;
+  }
+
+  main .Price .Course section:nth-of-type(1) p:nth-of-type(3) {
+    font-size: 18px;
+
+    padding-left: 51px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  /* 2行目 */
+
+  main .Price .Course section:nth-of-type(2) {
+    padding-left: 42.5px;
+    padding-right: 42.5px;
+  }
+
+  main .Price .Course section:nth-of-type(2) p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-left: 90px;
+  }
+
+  main .Price .Course section:nth-of-type(2) p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  /* 3行目 */
+
+  main .Price .Course section:nth-of-type(3) {
+    padding-left: 42.5px;
+    padding-right: 42.5px;
+  }
+
+  main .Price .Course section:nth-of-type(3) p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-left: 81px;
+  }
+
+  main .Price .Course section:nth-of-type(3) p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 93px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  /* 4行目 */
+
+  main .Price .Course section:nth-of-type(4) {
+    padding-left: 42.5px;
+    padding-right: 42.5px;
+  }
+
+  main .Price .Course section:nth-of-type(4) p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-left: 81px;
+  }
+
+  main .Price .Course section:nth-of-type(4) p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 109px;
+  }
+
+
+
+  /* オススメ */
+
+  main .Price .Recommendation {
+    width: 256px;
+    height: 45px;
+    left: 592px;
+    bottom: 500px;
+    border: 1px solid #000;
+
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+
+  }
+
+  main .Price .Recommendation p {
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00B21B;
+  }
+
+  /* 波 */
+  main .wave-after-2 img {
+    position: relative;
+    width: 1440px;
+    bottom: 603px;
+  }
+
+  /* FAQ */
+
+  main .FAQ {
+    position: relative;
+    width: 1440px;
+    bottom: 600px;
+    margin-left: 165px;
+    width: 400px;
+  }
+
+  main .FAQ h1 {
+    font-size: 64px;
+  }
+
+  main .FAQ h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  main .FAQ section section h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00B21B;
+  }
+
+  main .FAQ section .Question p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  main .FAQ section .Answer p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  main .FAQ section:nth-child(3) {
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    width: 1150px;
+  }
+
+  main .FAQ section:nth-child(4) {
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-bottom: 10px;
+
+    width: 1150px;
+  }
+
+  main .FAQ section:nth-child(5) {
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-bottom: 10px;
+
+    width: 1150px;
+  }
+
+  /* footer */
+
+  footer {
+    position: relative;
+    bottom: 490px;
+  }
+
+  footer div img {
+    width: 1440px;
+    height: 560px;
+  }
+
+  footer .Background {
+    height: 280px;
+    width: 1440px;
+  }
+
+  footer .Background div {
+    position: relative;
+
+    width: 360px;
+    height: 80px;
+    text-align: center;
+    padding-top: 23px;
+    border-radius: 60px;
+    top: 100px;
+    left: 540px;
+  }
+
+  footer .Background div a {
+    font-size: 20px;
+  }
+
+  footer .BackgroundAbcgym {
+    background-color: #111111;
+    width: 1440px;
+    height: 223px;
+  }
+
+  footer .BackgroundAbcgym img {
+    position: relative;
+
+    width: 200px;
+    height: 40px;
+
+    top: 70px;
+    left: 620px;
+  }
+
+  /* > */
+  footer div .TopReturn:before {
+    z-index: 1;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 117px;
+  }
+
+  footer div .TopReturn:after {
+    z-index: 1;
+    content: '';
+    width: 22px;
+    height: 22px;
+    border: 0;
+    border-top: solid 3px #00B21B;
+    border-right: solid 3px #00B21B;
+    transform: rotate(314deg);
+    position: absolute;
+    margin-left: 1129px;
+    margin-top: 150px;
+  }
+
+  footer .menu {
+    position: relative;
+    display: block;
+    bottom:100px;
+  } 
+
+  body,footer {
+    height: 0px;
+  }
+
+}
