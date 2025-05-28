@@ -936,6 +936,11 @@ main #Section9 button:hover {
 }
 
 /* footer */
+footer {
+    width: 2000px;
+    margin: 0 auto;
+}
+
 footer>div {
     margin: 300px auto 0 auto;
     background-color: #3B3B41;
