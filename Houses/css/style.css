@@ -2,8 +2,6 @@
 
 body {
     font-family: "游ゴシック体 Pr6N B", YuMincho, serif;
-    /* 游ゴシック体 Pr6N B */
-    /* "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "游明朝",  YuMincho, serif; */
 }
 
 /* はみ出しを表示しない。 */
@@ -15,17 +13,11 @@ body {
 
 /* header以外を固定にする */
 
-
 main,
 footer {
-    /* width: 1500px; */
     width: 100%;
     margin: 0 auto;
 }
-
-/* slick-track{
-    width: 100vw;
-} */
 
 /* aタグすべて統一 */
 main a,
@@ -119,7 +111,6 @@ header>div>p {
 /* ドロップダウンメニュー */
 
 header nav#Menu2 li>div {
-    /* 一時的にコメントアウト */
     display: none;
     position: fixed;
     /* ← fixedにしてbody基準に */
@@ -128,17 +119,11 @@ header nav#Menu2 li>div {
     left: 0;
     width: 100vw;
     height: calc(1000vw/26);
-    /* height: 60%; */
     background-color: white;
     border-bottom: 3px solid #000000;
     z-index: 100;
     text-align: left;
 }
-
-/* 検証用 */
-/* header nav#Menu2>ul>li:nth-of-type(4)>div {
-    display: block;
-} */
 
 header nav#Menu2 li div h1 {
     margin-left: calc(1000vw/50);
@@ -199,7 +184,6 @@ header nav#Menu2 li div h1 {
 }
 
 #Menu2-List1-div1>ul {
-    /* max-width: calc(1000vw / 80); */
     list-style: none;
 }
 
@@ -554,8 +538,6 @@ main #Section2 button:hover {
 main #Section3 {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0 auto;
-    /* width: 1500px; */
     width: 100vw;
 }
 
@@ -563,10 +545,8 @@ main #Section3::before {
     display: block;
     content: "";
     position: absolute;
-    /* top: 2200px; */
     top: calc(1000vw/6.7);
     left: 0;
-    /* width: 1910px; */
     width: 100vw;
     height: 2000px;
     background-color: #F7F7F7;
@@ -717,7 +697,7 @@ main div#PickupText1 p {
     font-size: calc(1000vw/750);
 }
 
-/*  */
+/* 建売住宅・分譲地 */
 
 main #Section5 {
     display: flex;
@@ -819,14 +799,9 @@ main #Section7 {
 main #Section7::before {
     display: block;
     content: "";
-    /* position: relative; */
     position: absolute;
     top: -430px;
-    /* top: calc(100000vw/215); */
-    /* top: 7650px; */
     left: 0;
-    /* left: -210; */
-    /* width: 1910px; */
     width: 100vw;
     height: 830px;
     background-color: #f7f7f7;
@@ -846,7 +821,6 @@ main #Section7 #slide-items .regular li {
 }
 
 main #Section7 #slide-items .regular li>img {
-    /* width: 300px; */
     width: calc(1000vw/50);
     height: auto;
     border-radius: 10px;
@@ -874,21 +848,24 @@ main #Section7 #slide-items .regular li p:nth-of-type(2)::after {
 
 
 #newNotice {
-    width: calc(1000vw/15);
-    /* margin-left: calc(1000vw/75); */
-    margin: 0 auto;
+    width: 100%;
 }
+
+#newNotice>h1 {
+    text-align: center;
+}
+
 
 /* スムストックEXPO住宅博 */
 
 main #Section8 div {
     width: 300px;
     height: 380px;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
     background-color: #f7f7f7;
     padding: 20px;
-    margin-left: calc(1000vw/75);
-    /* margin: 0 auto; */
+    /* margin-left: calc(1000vw/75); */
+
 }
 
 main #Section8 div h3 {
@@ -981,8 +958,6 @@ main #Section9 button:hover {
 
 /* footer */
 footer {
-    /* width: 1900px; */
-    /* width: 100vw; */
     margin: 0 auto;
 }
 
@@ -990,7 +965,6 @@ footer>div {
     margin: 300px auto 0 auto;
     background-color: #3B3B41;
     padding: 100px 100px 0px calc(1000vw/60);
-    /* padding: 100px 100px 0px 600px; */
 }
 
 footer>div>div:nth-of-type(2) {
@@ -1022,10 +996,6 @@ footer div div:nth-of-type(2) p:nth-of-type(1) {
 footer div div:nth-last-child(1) a {
     color: #FFFFFF;
 }
-
-/* footer div div:nth-last-child(1) p {
-    
-} */
 
 footer div div a:hover,
 footer div div button:hover {
@@ -1096,8 +1066,6 @@ header>section {
     }
 
     header.small div a img {
-        /* width: 50px;
-    height: 50px; */
         margin-left: 18px;
         margin-top: 20px;
     }
@@ -1105,12 +1073,12 @@ header>section {
     /* サイズ調整 */
     header#FloatingMenu>div {
         top: 0;
+        left: 15;
     }
 
     #FloatingMenu {
         position: fixed;
     }
-
 
 
     /* トグルメニュー（表示） */
@@ -1125,7 +1093,7 @@ header>section {
         top: 35px;
         width: 30px;
         height: 30px;
-        left: 90vw;
+        left: 85vw;
         cursor: pointer;
     }
 
@@ -1355,44 +1323,21 @@ header>section {
 
     main #Section5 {
         display: flex;
-        margin: 0 auto;
+        margin: 0 auto 0 auto;
         width: 340px;
         flex-direction: column;
     }
 
     main #Section5 div {
         margin: 0 auto;
-        width: 350px;
+        width: calc(1000vw/20);
         margin-bottom: 50px;
     }
 
-    /*
     main #Section5 div img {
-        border-radius: 8px;
+        margin: 0 auto;
+        width: calc(1000vw/20);
     }
-
-    main #Section5 div h3 {
-        margin-top: 20px;
-    }
-
-    main #Section5 div p {
-        margin-top: 10px;
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-
-    main #Section5 button {
-        display: block;
-        font-weight: bold;
-        border: 1px solid #3B3B41;
-        background-color: #3B3B41;
-        color: #FFFFFF;
-        margin-top: 30px;
-        padding: 20px;
-        border-radius: 5px;
-
-    } */
 
 }
 
@@ -1403,6 +1348,8 @@ header>section {
         width: 100vw;
     }
 
+
+
     /* スライドショー */
     #sliderArea {
         width: 100vw;
@@ -1411,29 +1358,19 @@ header>section {
 
     #sliderArea ul img {
         width: calc(1000vw/11.1);
-        /* 変更なし */
-        /* height: auto;
-        display: block;
-        object-fit: contain; */
         margin: 0 auto;
     }
 
     main>p {
-        /* text-align: center;
-        line-height: 60px; */
         font-size: calc(1000vw/383.5);
-        /* font-weight: bold; */
     }
 
     /* Housesの注文住宅～ */
     main #Section1 {
-        /* display: flex;
-        position: relative; */
         right: 0px;
     }
 
     main #Section1 img {
-        /* width: 1500px; */
         height: auto;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -1441,48 +1378,14 @@ header>section {
         overflow: hidden;
     }
 
-    /*
-    main #Section1 img,
-    main #Section1 p {
-        opacity: 0;
-        transition: transform 1.0s ease, opacity 1.0s ease;
-        transform: translateY(150px);
-    }
-
-    main #Section1 img.is-active,
-    main #Section1 p.is-active {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-
-    main #Section1 div {
-        line-height: 75px;
-        font-weight: bold;
-        margin-top: 330px;
-        margin-left: 80px;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-    }
-
-    main #Section1 div p:nth-of-type(1) {
-        color: #7d7d7d;
-        font-size: 20px;
-    }
-
- */
     main #Section1 div {
         line-height: 40px;
-        /* font-weight: bold; */
         margin-top: 310px;
-        /* writing-mode: vertical-rl;
-        text-orientation: upright; */
         margin-left: 20px;
         margin-right: 5%;
     }
 
     main #Section1 div p:nth-of-type(1) {
-        /* color: #7d7d7d; */
         font-size: 15px;
     }
 
@@ -1491,35 +1394,14 @@ header>section {
         font-size: 30px;
     }
 
-    /* 
-    main #Section2 {
-        margin-top: 100px;
-    }
-    */
 
     main #Section2 p {
         margin: 0 auto;
         text-align: center;
         font-weight: 500;
-        width: 70vw;
+        width: 75vw;
+        font-size: larger;
     }
-
-    /* main #Section2 button {
-        display: block;
-        font-weight: bold;
-        border: 1px solid #3B3B41;
-        background-color: #3B3B41;
-        color: #FFFFFF;
-        margin: 0 auto;
-        margin-top: 50px;
-        padding: 20px;
-        border-radius: 5px;
-    } */
-
-    /*
-    main #Section2 button:hover {
-        opacity: 0.8;
-    } */
 
     /* 積水ハウスの住宅展示場へ */
 
@@ -1539,43 +1421,25 @@ header>section {
         order: 1;
     }
 
-    /* main #Section3 div:nth-of-type(2) {
-        width: 100%;
-        height: auto;
-    } */
-
-
-
     main #Section3::before {
-        /* display: block;
-        content: "";
-        position: absolute;*/
         top: 850px;
         height: 3000px;
-        /* left: -210; */
-        /* width: 1000px;*/
-        /* height: calc(1000vw/2.5); */
-        /* background-color: #F7F7F7;
-        z-index: -1; */
     }
 
 
     main #Section3 div:nth-of-type(1) {
         margin: 0px 50px;
-        /* width:  calc(92% - ((100vw - 375px) * ((400 - 75) / (767 - 375)))); */
-        width: calc(1000vw/5);
+        width: 100%;
         height: auto;
         margin-top: calc(-1000vw / 17);
     }
 
     main #Section3 div:nth-of-type(1) p:nth-of-type(1) {
-        /* font-weight: bold; */
         font-size: 25px;
         line-height: 60px;
     }
 
     main #Section3 div:nth-of-type(1) p:nth-of-type(2) {
-        /* font-weight: bold; */
         font-size: calc(17px + ((100vw - 375px) * ((20 - 17) / (767 - 375))));
         line-height: 40px;
         margin-bottom: 20px;
@@ -1587,29 +1451,17 @@ header>section {
 
 
     main #Section3 div:nth-of-type(1) p:nth-of-type(3) {
-        width: calc(20% + ((100vw - 375px) * ((45 - -200) / (767 - 375))));
+        width: 80%;
     }
 
 
     main #Section3 div:nth-of-type(1) button {
-        /* display: block;
-        font-weight: bold;
-        border: 1px solid #3B3B41;
-        background-color: #3B3B41;
-        color: #FFFFFF; */
-
         margin: 0 auto;
         padding: 20px;
         margin: 25px calc(((100vw - 375px) * (220 / (767 - 375))));
         border-radius: 5px;
     }
 
-    /*
-    main #Section3 button:hover {
-        opacity: 0.8;
-    }
-
-    */
     main #Section3 div img {
         position: relative;
         width: 100vw;
@@ -1623,16 +1475,12 @@ header>section {
     }
 
     main #Section3 div img:nth-of-type(1) {
-        /* width: 400px; */
-        /* width: 50vw; */
         width: calc(1000vw/19);
         top: calc(1000vw/150);
         left: calc(1000vw/45);
-        /* z-index: 1; */
     }
 
     main #Section3 div img:nth-of-type(2) {
-        /* width: 50vw; */
         width: calc(1000vw/19);
         top: calc(1000vw/-50);
         right: calc(1000vw/157);
@@ -1641,108 +1489,53 @@ header>section {
     main #Section3 div img:nth-of-type(3) {
 
         width: calc(1000vw/19);
-        /* object-fit: cover;
-        object-position: top; */
-        /* top: calc(-2vh + (100vw - 375px) * ((-356 + 2) / (767 - 375))); */
         top: calc(1000vw/ -14);
-        /* left: calc(-21vh + (100vw - 375px) * ((639 - 21) / (767 - 375))); */
         left: calc(1000vw/20);
 
     }
 
     /* 更新欄 */
     main #Section4 {
-        /* margin: 0 auto; */
         width: calc(1000vw/12);
-        /* display: flex;
-        flex-wrap: wrap; */
     }
 
-    /* 
-    main #Section4 div {
-        background-color: #FFFFFF;
-        width: 600px;
-        margin: 40px;
-        padding: 10px 25px 60px 25px;
-    }
-
-    main #Section4 div h1::before {
-        content: "";
-        display: inline-block;
-        width: 2em;
-        height: 2em;
-
-        position: relative;
-        top: 23;
-        left: 10;
-    }
-
-    main #Section4 div:nth-of-type(1) h1:nth-of-type(1)::before {
-        background-image: url('../img/icon/icons-calendar.png');
-    }
-
-    main #Section4 div:nth-of-type(2) h1:nth-of-type(1)::before {
-        background-image: url('../img/icon/icons-landarea.png');
-    }
-
-    main #Section4 div:nth-of-type(3) h1:nth-of-type(1)::before {
-        background-image: url('../img/icon/icons-party.png');
-    }
-
-    main #Section4 div:nth-of-type(4) h1:nth-of-type(1)::before {
-        background-image: url('../img/icon/icons-chair.png');
-    }
-
-    main #Section4 div h1 {
-        padding-bottom: 10px;
-    } */
-
-    main #Section4 div a {
-        /* position: relative;
-        top: 20; */
-        /* left: calc(1000vw/27); */
-    }
 
     /* 矢印 */
     main #Section4 div a::after {
-        /* content: "";
-        display: inline-block;
-        background-image: url('../img/icon/icons-arrow.png');
-        width: 1em;
-        height: 1em;
-        filter: invert(100%);
-        background-color: #FFFFFF;
-
-        position: relative;
-        top: 2; */
         left: 30;
     }
 
     main div#PickupText1 p {
         margin: 60px;
         text-align: center;
-        font-size: calc(1000vw/400);
+        font-size: larger;
 
         br {
             display: none;
         }
     }
 
+    main #Section6 {
+        width: 100%;
+        height: 570px;
+        background-color: #f7f7f7;
+        margin: 0px auto;
+    }
+
+    main #Section6 img {
+        float: none;
+        display: block;
+        margin: 0px auto;
+    }
+
     /* カールセルスライダー */
 
     main #Section7 #slide-items .regular li {
-        /* width: 300px; */
         width: calc(1000vw/28);
-        /* height: 500px;
-        border-radius: 10px;
-        margin: 15px; */
     }
 
     main #Section7 #slide-items .regular li>img {
-        /* width: 300px; */
         width: calc(1000vw/28);
-        /* height: auto;
-        border-radius: 10px; */
     }
 
 
@@ -1848,56 +1641,61 @@ header>section {
     }
 
     footer div div:nth-of-type(1) img {
-        /* margin-left:186px; */
-        margin-left: calc(1000vw/43.5);
+        display: block;
+        margin: 0 auto;
+        /* margin-left: calc(1000vw/43.5); */
+
     }
 
-
+    /* Houses調整 */
     footer div div:nth-of-type(1) p {
-        /* margin-left:204px; */
-        margin-left: calc(1000vw/37.5);
+        text-align: center;
     }
 
 
-    /*
-    footer div div:nth-of-type(2) {
-        margin: 30px 0px 0px 0px;
-    }
-
-    footer div div:nth-of-type(2) p:nth-of-type(1) {
-        margin-left: 350px;
-    }
-
-    footer div div:nth-last-child(1) a {
-        color: #FFFFFF;
-    }
 
 
-    footer div div a:hover,
-    footer div div button:hover {
-        opacity: 0.8;
-    } */
 
     /* Footer-div1(グループ会社＋) */
     /* Footer-div2(関連サービス・サイト一覧＋) */
 
-
-    #Footer-div1>button>p {
-        width: 120px;
-        margin-left: calc(1000vw/45);
+    /* 中央寄せのための調整 */
+    /* footer>div>div>p, */
+    #Footer-div1>button>p,
+    #Footer-div2>button>p,
+    footer>div>div>p {
+        margin: 0;
     }
 
+    #Footer-div1>button>p,
     #Footer-div2>button>p {
-        width: 230px;
-        margin-left: calc(1000vw/65);
+        width: 250px;
     }
 
 
-    #Footer-div1>ul,
+    footer div>div,
+    footer div div:nth-of-type(2) {
+        margin: 20px auto 0px auto;
+        padding: 0;
+    }
+
+
+
+    /* +　内の微調整 */
+    #Footer-div1>ul {
+        margin: 0 auto;
+        position: relative;
+        left: 95px;
+    }
+
     #Footer-div2>ul {
-        display: none;
-        margin-left: calc(1000vw/42);
-        list-style: none;
+        margin: 0 auto;
+        position: relative;
+        left: 140px;
+    }
+
+    #Footer-div1-button2 {
+        padding-left: 90px;
     }
 
     #Footer-div1>ul.active,
@@ -1905,38 +1703,26 @@ header>section {
         display: block;
     }
 
-    #Footer-div1>ul>li,
-    #Footer-div2>ul>li {
-        margin-top: 10px;
-    }
+
 
     /* Footer-div3 */
     #Footer-div3 {
         display: flex;
-        margin-top: 50px;
-        margin-left: calc(1000vw/-95);
-        padding-bottom: calc(1000vw/170);
-        width: calc(1000vw/12);
+        margin: 50px auto 0 auto;
+        width: 300;
         flex-direction: column;
+
     }
 
     #Footer-div3>p {
+        text-align: center;
         padding-left: 0px;
-        margin: 10px auto;
+        padding-top: 40px;
     }
 
 }
 
 @media (max-width: 550px) {
-    /* #toggle-btn {
-        top: 20px;
-        margin-left: -30px;
-    }
-
-    header div {
-        margin-top: 20px;
-    } */
-
 
     main #Section1 img {
         width: 300px;
@@ -1969,6 +1755,20 @@ header>section {
     main #Section4 div h1::before {
         top: 18;
         left: 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    #Footer-div1-button2 {
+        padding-left: 40px;
+    }
+
+    #Footer-div2>ul {
+        margin: 0 auto;
+        position: relative;
+        left: 100px;
     }
 
 }
