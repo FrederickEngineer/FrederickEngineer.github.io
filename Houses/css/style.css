@@ -437,8 +437,7 @@ main {
 }
 
 #sliderArea {
-
-    height: calc(1000vw/12);
+    height: calc(1000vw/16);
 }
 
 #sliderArea ul img {
@@ -452,8 +451,8 @@ main {
 
 main>p {
     text-align: center;
-    line-height: 60px;
-    font-size: 25px;
+    line-height: 80px;
+    font-size: 36px;
     font-weight: bold;
 }
 
@@ -469,7 +468,7 @@ main #Section1 img {
     height: auto;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    margin-top: 300px;
+    margin-top: 125px;
     overflow: hidden;
 }
 
@@ -490,7 +489,7 @@ main #Section1 p.is-active {
 main #Section1 div {
     line-height: 75px;
     font-weight: bold;
-    margin-top: 330px;
+    margin-top: 135px;
     margin-left: 80px;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -512,8 +511,11 @@ main #Section2 {
 }
 
 main #Section2 p {
+    margin: 0 auto;
     text-align: center;
     font-weight: 500;
+    font-size: 36px;
+    width: 80%;
 }
 
 main #Section2 button {
@@ -545,7 +547,7 @@ main #Section3::before {
     display: block;
     content: "";
     position: absolute;
-    top: calc(1000vw/6.7);
+    top: calc(1000vw/8.7);
     left: 0;
     width: 100vw;
     height: 2000px;
@@ -692,9 +694,11 @@ main #Section4 div a::after {
 
 
 main div#PickupText1 p {
-    margin: 50px 400px;
-    text-align: left;
-    font-size: calc(1000vw/750);
+    margin: 100px auto 100px auto;
+    /* text-align: left; */
+    /* font-size: calc(1000vw/750); */
+    font-size: 36px;
+    width: 80%;
 }
 
 /* 建売住宅・分譲地 */
@@ -702,12 +706,12 @@ main div#PickupText1 p {
 main #Section5 {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
+    width: 85%;
 }
 
 main #Section5 div {
     margin: 0 auto;
-    width: 350px;
+    width: 400px;
 }
 
 main #Section5 div img {
@@ -813,7 +817,6 @@ main #Section7 #slide-items {
 }
 
 main #Section7 #slide-items .regular li {
-    /* width: 300px; */
     width: calc(1000vw/50);
     height: 500px;
     border-radius: 10px;
@@ -855,18 +858,29 @@ main #Section7 #slide-items .regular li p:nth-of-type(2)::after {
     text-align: center;
 }
 
-
 /* スムストックEXPO住宅博 */
+
+main #Section8{
+    display: flex;
+}
 
 main #Section8 div {
     width: 300px;
     height: 380px;
-    margin: 30px auto 0 auto;
+    margin-top: 30px;
+    margin-right: auto;
     background-color: #f7f7f7;
     padding: 20px;
-    /* margin-left: calc(1000vw/75); */
-
 }
+
+main #Section8 div:nth-of-type(1) {
+    margin-left: auto;
+}
+
+main #Section8 div:nth-last-child(1) {
+    margin-right: auto;
+}
+
 
 main #Section8 div h3 {
     margin: 0 auto;
@@ -874,10 +888,26 @@ main #Section8 div h3 {
     padding-bottom: 10px;
 }
 
-main #Section8 div p:nth-last-of-type(1) {
+main #Section8 div a {
+    display: block;
     font-size: 0.9em;
     font-weight: bold;
     margin: 10px 0 0 150px;
+    color: #000000;
+}
+
+main #Section8 div a::after {
+    content: "";
+    display: inline-block;
+    background-image: url('../img/icon/icons-arrow.png');
+    width: 1em;
+    height: 1em;
+    filter: invert(100%);
+    background-color: #FFFFFF;
+
+    position: relative;
+    top: 2;
+    left: 12;
 }
 
 main #Section8 div h2 {
@@ -886,12 +916,10 @@ main #Section8 div h2 {
     padding: 0 0;
 }
 
-
 main #Section8 div p {
     font-size: 0.8em;
     padding: 10 0;
 }
-
 
 main #Section8 div img {
     display: block;
@@ -900,6 +928,12 @@ main #Section8 div img {
     border-radius: 10px;
     margin: 0 auto;
 }
+
+
+
+
+
+/* ニュースリリース */
 
 main #Section9 {
     margin: 50px 0;
@@ -919,7 +953,13 @@ main #Section9 div h1 {
     font-weight: bold;
 }
 
-main #Section9 div div {
+
+main #Section9 div>a {
+    display: block;
+    border-bottom: 1px solid #dddada;
+}
+
+main #Section9 div>a:nth-of-type(1) {
     border-top: 1px solid #dddada;
 }
 
@@ -932,12 +972,12 @@ main #Section9 div div a {
     margin-left: 10px;
 }
 
-main #Section9 div div a>p {
+main #Section9 div a>div>p {
     background-color: #F7F7F7;
     padding: 5px;
 }
 
-main #Section9 div div:nth-last-child(1) {
+main #Section9 div>a:nth-last-child(1) {
     border-bottom: 1px solid #dddada;
 }
 
@@ -1087,6 +1127,7 @@ header>section {
     }
 
     #toggle-btn {
+        
         display: block;
         position: absolute;
         z-index: 20;
@@ -1151,6 +1192,7 @@ header>section {
         visibility: 1;
         /* 中でスクロールできるようにする。 */
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     #global-nav-ul {
@@ -1339,6 +1381,15 @@ header>section {
         width: calc(1000vw/20);
     }
 
+    main #Section8{
+        display: block;
+    }
+
+    main #Section8 div{        
+        margin: 30 auto 0 auto;
+    }
+
+
 }
 
 @media screen and (max-width:767px) {
@@ -1353,7 +1404,7 @@ header>section {
     /* スライドショー */
     #sliderArea {
         width: 100vw;
-        height: calc(1000vw/12);
+        height: calc(1000vw/15);
     }
 
     #sliderArea ul img {
@@ -1362,7 +1413,7 @@ header>section {
     }
 
     main>p {
-        font-size: calc(1000vw/383.5);
+        font-size: calc(1000vw/290);
     }
 
     /* Housesの注文住宅～ */
@@ -1374,13 +1425,13 @@ header>section {
         height: auto;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        margin-top: 300px;
+        margin-top: 125px;
         overflow: hidden;
     }
 
     main #Section1 div {
         line-height: 40px;
-        margin-top: 310px;
+        margin-top: 135px;
         margin-left: 20px;
         margin-right: 5%;
     }
@@ -1572,26 +1623,13 @@ header>section {
         font-weight: bold;
     }
 
-    main #Section9 div div {
-        border-top: 1px solid #dddada;
-    }
-
     main #Section9 div div p {
         display: inline-block;
         margin: 20px;
     }
 
-    main #Section9 div div a {
+    main #Section9 div a div  {
         margin-left: 10px;
-    }
-
-    main #Section9 div div a>p {
-        background-color: #F7F7F7;
-        padding: 5px;
-    }
-
-    main #Section9 div div:nth-last-child(1) {
-        border-bottom: 1px solid #dddada;
     }
 
     main #Section9 div button {
@@ -1708,16 +1746,15 @@ header>section {
     /* Footer-div3 */
     #Footer-div3 {
         display: flex;
-        margin: 50px auto 0 auto;
-        width: 300;
+        margin-top: 50px;
+        margin-left: -150px;
+        width: 350;
         flex-direction: column;
 
     }
 
     #Footer-div3>p {
-        text-align: center;
-        padding-left: 0px;
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
 }
@@ -1737,10 +1774,6 @@ header>section {
 
     main #Section9 div div span {
         margin-left: 10px;
-    }
-
-    main #Section9 div div:nth-last-child(1) {
-        padding-bottom: 20px;
     }
 
     main #Section4 div {
