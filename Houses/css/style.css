@@ -860,7 +860,7 @@ main #Section7 #slide-items .regular li p:nth-of-type(2)::after {
 
 /* スムストックEXPO住宅博 */
 
-main #Section8{
+main #Section8 {
     display: flex;
 }
 
@@ -1127,7 +1127,7 @@ header>section {
     }
 
     #toggle-btn {
-        
+
         display: block;
         position: absolute;
         z-index: 20;
@@ -1381,11 +1381,11 @@ header>section {
         width: calc(1000vw/20);
     }
 
-    main #Section8{
+    main #Section8 {
         display: block;
     }
 
-    main #Section8 div{        
+    main #Section8 div {
         margin: 30 auto 0 auto;
     }
 
@@ -1628,7 +1628,7 @@ header>section {
         margin: 20px;
     }
 
-    main #Section9 div a div  {
+    main #Section9 div a div {
         margin-left: 10px;
     }
 
@@ -1648,31 +1648,9 @@ header>section {
     }
 
     /* footer */
-    /* footer {
-        margin: 0 auto;
-    }
-
     footer>div {
-        margin: 300px auto 0 auto;
-        background-color: #3B3B41;
-        padding: 100px 100px 0px calc(1000vw/60);
+        padding: 100px 0px 0px 0px;
     }
-
-    footer>div>div:nth-of-type(2) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer div div img {
-        filter: brightness(10);
-    }
-
-    footer>div>div>p {
-        color: #FFFFFF;
-        margin-left: 21px;
-    }
-
-    */
 
     footer div div:nth-of-type(1) {
         float: none;
@@ -1681,8 +1659,6 @@ header>section {
     footer div div:nth-of-type(1) img {
         display: block;
         margin: 0 auto;
-        /* margin-left: calc(1000vw/43.5); */
-
     }
 
     /* Houses調整 */
@@ -1741,20 +1717,19 @@ header>section {
         display: block;
     }
 
-
-
     /* Footer-div3 */
     #Footer-div3 {
         display: flex;
         margin-top: 50px;
         margin-left: -150px;
-        width: 350;
+        width: 450;
         flex-direction: column;
 
     }
 
     #Footer-div3>p {
         padding-top: 20px;
+        padding-left: 170px;
     }
 
 }
@@ -1788,20 +1763,6 @@ header>section {
     main #Section4 div h1::before {
         top: 18;
         left: 0;
-    }
-
-}
-
-@media (max-width: 450px) {
-
-    #Footer-div1-button2 {
-        padding-left: 40px;
-    }
-
-    #Footer-div2>ul {
-        margin: 0 auto;
-        position: relative;
-        left: 100px;
     }
 
 }
