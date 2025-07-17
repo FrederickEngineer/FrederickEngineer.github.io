@@ -212,7 +212,8 @@ $(function () {
   $("#toggle-btn").click(function () {
 
     // $("#Menu").toggleClass("open");
-    $("#global-nav").toggleClass("open");
+    $("#FloatingMenu").toggleClass("open");
+    // $("#global-nav").toggleClass("open");
     $("#global-nav-ul").toggleClass("open");
     $("#toggle-btn span").toggleClass("open");
     

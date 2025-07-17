@@ -695,8 +695,6 @@ main #Section4 div a::after {
 
 main div#PickupText1 p {
     margin: 100px auto 100px auto;
-    /* text-align: left; */
-    /* font-size: calc(1000vw/750); */
     font-size: 36px;
     width: 80%;
 }
@@ -1127,7 +1125,6 @@ header>section {
     }
 
     #toggle-btn {
-
         display: block;
         position: absolute;
         z-index: 20;
@@ -1181,30 +1178,24 @@ header>section {
 
 
     /* トグルメニュー*/
-    #global-nav.open {
-        position: fixed;
-        padding: 0px;
-        background: #FFFFFF;
-        color: #000000;
-        width: 100%;
-        height: 100%;
-        margin-top: -3px;
-        visibility: 1;
-        /* 中でスクロールできるようにする。 */
+
+    /* ヘッダー部分から */
+    header#FloatingMenu.open {
+        border-bottom: none;
         overflow-y: auto;
         overflow-x: hidden;
+        width: 100%;
+        height: 100vh;
     }
 
     #global-nav-ul {
         display: none;
-
-
     }
 
     #global-nav-ul.open {
         display: flex;
         flex-direction: column;
-
+        border-top: 1px solid #c7c3c3;
     }
 
     #global-nav-ul>li,
@@ -1358,10 +1349,8 @@ header>section {
     /* スクロール 不可*/
     html.no_scroll {
         overflow: hidden;
-        height: 100%;
+        height: 100vh;
     }
-
-
 
     main #Section5 {
         display: flex;
@@ -1398,7 +1387,6 @@ header>section {
         margin: 0 auto;
         width: 100vw;
     }
-
 
 
     /* スライドショー */
@@ -1557,7 +1545,6 @@ header>section {
     }
 
     main div#PickupText1 p {
-        margin: 60px;
         text-align: center;
         font-size: larger;
 
