@@ -38,5 +38,6 @@ jobs:
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           port: 10022
           script: |
-            tar -xzf ${{ secrets.SFTP_TARGET_HOUSES }}/tmp/houses.tar.gz -C ${{ secrets.SFTP_TARGET_HOUSES }}
-            rm ${{ secrets.SFTP_TARGET_HOUSES }}/tmp/houses.tar.gz
+                TARGET_DIR="${{ secrets.SFTP_TARGET_HOUSES }}"
+                tar -xzf "$TARGET_DIR/tmp/houses.tar.gz" -C "$TARGET_DIR"
+                rm ${{ secrets.SFTP_TARGET_HOUSES }}/tmp/houses.tar.gz
