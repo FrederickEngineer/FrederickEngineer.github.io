@@ -18,6 +18,7 @@ jobs:
       - name: Archive Houses contents
         run: tar -czf /tmp/houses.tar.gz -C Houses .
 
+      # 圧縮ファイルがあるのか確認
       - name: Check Houses contents
         run: |
         ls -l Houses
