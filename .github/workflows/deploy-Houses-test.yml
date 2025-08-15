@@ -39,5 +39,6 @@ jobs:
           port: 10022
           script: |
                 TARGET_DIR="${{ secrets.SFTP_TARGET_HOUSES }}"
+                ls -l "$TARGET_DIR/tmp"
                 tar -xzf "$TARGET_DIR/tmp/houses.tar.gz" -C "$TARGET_DIR"
                 rm ${{ secrets.SFTP_TARGET_HOUSES }}/tmp/houses.tar.gz
