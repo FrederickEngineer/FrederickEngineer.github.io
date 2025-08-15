@@ -18,6 +18,11 @@ jobs:
       - name: Archive Houses contents
         run: tar -czf /tmp/houses.tar.gz -C Houses .
 
+      - name: Check Houses contents
+        run: |
+        ls -l Houses
+        ls -l /tmp
+
       # 3️ tar.gz をサーバに転送
       - name: Upload Houses archive via SCP
         uses: appleboy/scp-action@master
