@@ -19,4 +19,4 @@ jobs:
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           port: 10022
           source: "./Houses/**"
-          target: ${{ secrets.SFTP_TARGET }}
+          target: ${{ secrets.SFTP_TARGET_HOUSES }}
