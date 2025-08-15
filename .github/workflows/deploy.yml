@@ -1,4 +1,4 @@
-name: Deploy to Xserver via SSH
+name: Deploy to Xserver via SSH (Houses)
 on:
   push:
     branches:
