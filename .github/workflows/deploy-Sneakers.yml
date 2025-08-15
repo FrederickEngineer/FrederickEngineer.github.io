@@ -40,5 +40,5 @@ jobs:
           script: |
                 TARGET_DIR="${{ secrets.SFTP_TARGET_SNEAKERS }}"
                 ls -l "$TARGET_DIR/tmp"
-                tar -xzf "$TARGET_DIR/tmp/SNEAKERS.tar.gz" -C "$TARGET_DIR"
-                rm ${{ secrets.SFTP_TARGET_SNEAKERS }}/tmp/SNEAKERS.tar.gz
+                tar -xzf "$TARGET_DIR/tmp/Sneakers.tar.gz" -C "$TARGET_DIR"
+                rm ${{ secrets.SFTP_TARGET_SNEAKERS }}/tmp/Sneakers.tar.gz
