@@ -1,4 +1,4 @@
-name: Deploy to Xserver via SSH (MILKcafeSite)
+name: Deploy to Xserver via SSH (Sneakers)
 on:
   push:
     branches:
