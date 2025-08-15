@@ -16,7 +16,7 @@ jobs:
 
       # 2️ MILKcafeSit 中身を tar.gz にまとめる
       - name: Archive MILKcafeSite contents
-        run: tar -czf /tmp/MILKcafeSite.tar.gz -C ./MILKcafeSit .
+        run: tar -czf /tmp/MILKcafeSite.tar.gz -C ./MILKcafeSite .
         
       # 3️ tar.gz をサーバに転送
       - name: Upload MILKcafeSite archive via SCP
