@@ -1,0 +1,22 @@
+name: Deploy to Xserver via SSH (MILKcafeSite)
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Sneakers/**'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      - name: Upload files via SSH
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          port: 10022
+          source: "./Sneakers/**"
+          target: ${{ secrets.SFTP_TARGET }}
