@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           port: 10022
           source: "/tmp/Stage.tar.gz"
-          target: "/roku-room.com/public_html/stage"
+          target: "./roku-room.com/public_html/stage"
 
       # 4️ サーバ上で展開して tar.gz を削除
       - name: Extract archive on server via SSH
@@ -46,7 +46,7 @@ jobs:
           key: ${{ secrets.SFTP_PRIVATE_KEY }}
           port: 10022
           script: |
-                TARGET_DIR="/roku-room.com/public_html/stage"
+                TARGET_DIR="./roku-room.com/public_html/stage"
                 ls -l "$TARGET_DIR/tmp"
                 tar -xzf "$TARGET_DIR/tmp/Stage.tar.gz" -C "$TARGET_DIR"
-                rm /roku-room.com/public_html/stage/tmp/Stage.tar.gz
+                rm ./roku-room.com/public_html/stage/tmp/Stage.tar.gz
