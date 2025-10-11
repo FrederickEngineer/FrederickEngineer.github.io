@@ -10,7 +10,7 @@ on:
 # SFTP_SERVE：Xserverのサーバー名（ホスト名）
 # SFTP_USERNAME：XserverのSSHユーザー名
 # SFTP_PRIVATE_KEY：ローカルで作成した秘密鍵の内容
-# SFTP_TARGET：アップロード先ディレクトリ
+# SFTP_TARGET：アップロード先ディレクトリ(./～)
 ####
 
 
