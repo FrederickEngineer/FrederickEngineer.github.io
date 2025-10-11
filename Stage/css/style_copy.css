@@ -1,0 +1,1349 @@
+/* 1000pxまで保証 */
+
+body {
+    font-family: "游ゴシック体 Pr6N B", YuMincho, serif;
+    /* 游ゴシック体 Pr6N B */
+    /* "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "游明朝",  YuMincho, serif; */
+}
+
+/* header以外を固定にする */
+main {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/* aタグすべて統一 */
+main a,
+footer a {
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
+
+/* フローティングメニュー */
+header#FloatingMenu {
+    background: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    padding: 10px;
+}
+
+/* メニュー位置調整 */
+header nav#Menu1,
+header nav#Menu2 {
+    text-align: right;
+}
+
+header nav#Menu1 {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+header nav#Menu1>a {
+    position: absolute;
+    text-decoration-line: none;
+    color: #000000;
+    z-index: 1;
+    font-size: 1em;
+}
+
+header nav#Menu1>a:nth-of-type(1) {
+    right: 300px;
+}
+
+header nav#Menu1>a:nth-of-type(2) {
+    right: 190px;
+}
+
+header nav#Menu1>a:nth-of-type(3) {
+    right: 50px;
+}
+
+
+
+header#FloatingMenu>div {
+    position: relative;
+    top: 30;
+    left: 50;
+}
+
+header nav#Menu2 {
+    position: relative;
+    top: -30;
+}
+
+header nav#Menu2 a {
+    text-decoration-line: none;
+    color: #000000;
+    margin: 0px 10px;
+}
+
+header nav#Menu2>ul>li {
+    display: inline;
+}
+
+header div p {
+    padding-left: 25px;
+}
+
+#Menu2>ul>li>a:hover {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000000;
+}
+
+#Menu1>a:hover {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000000;
+}
+
+/* ドロップダウンメニュー */
+
+header nav#Menu2 li>div {
+    /* 一時的にコメントアウト */
+    display: none;
+    position: fixed;
+    /* ← fixedにしてbody基準に */
+    top: 160px;
+    /* FloatingMenuの高さ分調整（必要に応じて） */
+    left: 0;
+    width: 100vw;
+    height: 60%;
+    background-color: white;
+    border-bottom: 3px solid #000000;
+    z-index: 100;
+    text-align: left;
+}
+
+/* 検証用 */
+/* header nav#Menu2>ul>li:nth-of-type(4)>div {
+    display: block;
+} */
+
+header nav#Menu2 li div h1 {
+    margin-left: 300px;
+}
+
+/* #Menu2-ListX (共通部)*/
+
+#Menu2-List1-div1>ul>li>ul>li>a:hover,
+#Menu2-List2-div1>ul>li>ul>li>a:hover,
+#Menu2-List3-div1>ul>li>ul>li>a:hover,
+#Menu2-List4-div1>ul>li>ul>li>a:hover {
+    filter: brightness(0.8);
+}
+
+/* 下矢印（共通） */
+.dli-caret-down {
+    display: inline-block;
+    color: #333;
+    padding-bottom: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.6em 0.4em;
+    border-top-color: currentColor;
+    border-bottom: 0;
+    margin-left: 5.5px;
+}
+
+
+/* #Menu2-List1 (個人のお客さま)　苦労した...*/
+
+#Menu2-List1 {
+    display: flex;
+    gap: 30px;
+    width: 1500px;
+}
+
+#Menu2-List1>div:nth-of-type(1) {
+    margin-left: 300px;
+    width: 800px;
+}
+
+#Menu2-List1>div:nth-of-type(2) {
+    width: 300px;
+}
+
+#Menu2-List1>div>h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#Menu2-List1-div1 {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#Menu2-List1-div1>ul {
+    width: 250px;
+    list-style: none;
+}
+
+#Menu2-List1-div1>ul:nth-of-type(2) {
+    margin-left: 100px;
+}
+
+#Menu2-List1-div1>ul:nth-of-type(3) {
+    position: relative;
+    top: -30px;
+}
+
+#Menu2-List1-div1>ul {
+    width: 250px;
+    list-style: none;
+}
+
+#Menu2-List1-div1>ul>li>ul>li {
+    position: relative;
+    right: 9px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#Menu2-List1-div1>ul>li>ul>li:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+#Menu2-List1-div1>ul>li>ul>li>a {
+    display: flex;
+    justify-content: space-between;
+    /* aタグをブロックにして長さを固定 */
+    width: 300px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #F7F7F7;
+    border-radius: 5px;
+}
+
+/* #Menu2-List2 (法人のお客さま) */
+
+#Menu2-List2>div:nth-of-type(1) {
+    margin-left: 300px;
+    width: 800px;
+}
+
+#Menu2-List2>div>h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#Menu2-List2-div1>ul>li>ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 60px;
+}
+
+#Menu2-List2-div1>ul>li>ul>li {
+    position: relative;
+    width: 45%;
+    right: 9px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#Menu2-List2-div1>ul>li>ul>li>a {
+    /* flexにすることで矢印を右端に */
+    display: flex;
+    justify-content: space-between;
+    /* aタグをブロックにして長さを固定 */
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #F7F7F7;
+    border-radius: 5px;
+}
+
+#Menu2-List2-div1>ul {
+    list-style: none;
+}
+
+/* #Menu2-List3 (オーナーさま) */
+
+#Menu2-List3 {
+    display: flex;
+    gap: 30px;
+    width: 1500px;
+}
+
+#Menu2-List3>div:nth-of-type(1) {
+    margin-left: 300px;
+    width: 800px;
+}
+
+#Menu2-List3>div:nth-of-type(2) {
+    width: 300px;
+}
+
+#Menu2-List3>div>h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#Menu2-List3-div1 {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#Menu2-List3-div1>ul {
+    width: 250px;
+    list-style: none;
+}
+
+#Menu2-List3-div1>ul>li>ul>li {
+    position: relative;
+    right: 9px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#Menu2-List3-div1>ul>li>ul>li:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+#Menu2-List3-div1>ul>li>ul>li {
+    margin-bottom: 30px;
+}
+
+
+#Menu2-List3-div1>ul>li>ul>li>a {
+    display: flex;
+    justify-content: space-between;
+    /* aタグをブロックにして長さを固定 */
+    width: 300px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #F7F7F7;
+    border-radius: 5px;
+}
+
+/* #Menu2-List4 (企業情報) */
+
+#Menu2-List4 {
+    display: flex;
+    gap: 30px;
+    width: 1500px;
+}
+
+#Menu2-List4>div:nth-of-type(1) {
+    margin-left: 300px;
+    width: 300px;
+}
+
+#Menu2-List4>div:nth-of-type(2) {
+    width: 800px;
+}
+
+#Menu2-List4>div>h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#Menu2-List4-div1 {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#Menu2-List4-div1>ul {
+    list-style: none;
+}
+
+#Menu2-List4-div1>ul:nth-of-type(2) {
+    margin-left: 100px;
+}
+
+#Menu2-List4-div1>ul:nth-of-type(3) {
+    position: relative;
+    top: -30px;
+}
+
+#Menu2-List4-div1>ul>li>ul>li {
+    display: inline-block;
+    position: relative;
+    right: 9px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#Menu2-List4-div1>ul>li>ul>li>a {
+    display: flex;
+    justify-content: space-between;
+    /* aタグをブロックにして長さを固定 */
+    width: 300px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #F7F7F7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#Menu2-List4-div1-ul1-li1>li:nth-of-type(even) {
+    margin-left: 60px;
+}
+
+/* ヘッダー調整 */
+
+header nav {
+    transition: top .3s;
+}
+
+header div a img,
+header div p {
+    transition: width .3s, height .3s, font-size .3s, margin-left .3s;
+}
+
+header nav#Menu2 ul li>div {
+    transition: top .3s;
+}
+
+header.small div a img {
+    width: 50px;
+    height: 50px;
+    margin-left: 18px;
+}
+
+header.small div p {
+    font-size: 10px;
+}
+
+header.small nav#Menu1 {
+    display: none;
+}
+
+header.small nav#Menu2 {
+    top: -40px;
+}
+
+header.small nav#Menu2 ul>li>div {
+    top: 107px;
+}
+
+
+/* スライドショー */
+main {
+    position: relative;
+    top: 170;
+}
+
+#sliderArea {
+    height: 700px;
+}
+
+#sliderArea ul img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 50px;
+}
+
+main>p {
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Housesの注文住宅 */
+main #Section1 {
+    display: flex;
+    position: relative;
+    right: 210px;
+}
+
+main #Section1 img {
+    width: 1500px;
+    height: auto;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: 300px;
+    overflow: hidden;
+}
+
+main #Section1 img,
+main #Section1 p {
+    opacity: 0;
+    transition: transform 1.0s ease, opacity 1.0s ease;
+    transform: translateY(150px);
+}
+
+main #Section1 img.is-active,
+main #Section1 p.is-active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+main #Section1 div {
+    line-height: 75px;
+    font-weight: bold;
+    margin-top: 330px;
+    margin-left: 80px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+main #Section1 div p:nth-of-type(1) {
+    color: #7d7d7d;
+    font-size: 20px;
+}
+
+
+main #Section1 div p:nth-of-type(2),
+main #Section1 div p:nth-of-type(3) {
+    font-size: 55px;
+}
+
+main #Section2 {
+    margin-top: 100px;
+}
+
+main #Section2 p {
+    text-align: center;
+    font-weight: 500;
+}
+
+main #Section2 button {
+    display: block;
+    font-weight: bold;
+    border: 1px solid #3B3B41;
+    background-color: #3B3B41;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main #Section2 button:hover {
+    opacity: 0.8;
+}
+
+
+/* 積水ハウスの住宅展示場へ */
+
+main #Section3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 1500px;
+
+}
+
+main #Section3::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 1800px;
+    left: -210;
+    width: 1910px;
+    height: 2000px;
+    background-color: #F7F7F7;
+    z-index: -1;
+}
+
+main #Section3 div:nth-of-type(1) {
+    margin: 100px 0px 0px 200px;
+    width: 50%;
+    height: auto;
+}
+
+main #Section3 div:nth-of-type(2) {
+    width: 75%;
+    height: auto;
+}
+
+main #Section3 div:nth-of-type(1) p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+main #Section3 div:nth-of-type(1) p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 80px;
+}
+
+main #Section3 div:nth-of-type(1) button {
+    display: block;
+    font-weight: bold;
+    border: 1px solid #3B3B41;
+    background-color: #3B3B41;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 20px;
+    margin: 30px 50px;
+    border-radius: 5px;
+}
+
+main #Section3 button:hover {
+    opacity: 0.8;
+}
+
+
+main #Section3 div img {
+    position: relative;
+    width: 400px;
+    height: auto;
+    border-radius: 35px;
+    margin-left: 100px;
+    overflow: hidden;
+
+}
+
+main #Section3 div img:nth-of-type(1) {
+    top: 100;
+    left: 200;
+}
+
+main #Section3 div img:nth-of-type(2) {
+    width: 500px;
+    top: -50;
+    right: 95px;
+}
+
+main #Section3 div img:nth-of-type(3) {
+    object-fit: cover;
+    object-position: top;
+    top: -380px;
+    left: 465px;
+}
+
+/* 更新欄 */
+main #Section4 {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #Section4 div {
+    background-color: #FFFFFF;
+    width: 600px;
+    margin: 40px;
+    padding: 10px 25px 60px 25px;
+}
+
+main #Section4 div h1::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+
+    position: relative;
+    top: 23;
+    left: 10;
+}
+
+main #Section4 div:nth-of-type(1) h1:nth-of-type(1)::before {
+    background-image: url('../img/icon/icons-calendar.png');
+}
+
+main #Section4 div:nth-of-type(2) h1:nth-of-type(1)::before {
+    background-image: url('../img/icon/icons-landarea.png');
+}
+
+main #Section4 div:nth-of-type(3) h1:nth-of-type(1)::before {
+    background-image: url('../img/icon/icons-party.png');
+}
+
+main #Section4 div:nth-of-type(4) h1:nth-of-type(1)::before {
+    background-image: url('../img/icon/icons-chair.png');
+}
+
+main #Section4 div h1 {
+    padding-bottom: 10px;
+}
+
+main #Section4 div a {
+    position: relative;
+    top: 20;
+    left: 350;
+}
+
+/* 矢印 */
+main #Section4 div a::after {
+    content: "";
+    display: inline-block;
+    background-image: url('../img/icon/icons-arrow.png');
+    width: 1em;
+    height: 1em;
+    filter: invert(100%);
+    background-color: #FFFFFF;
+
+    position: relative;
+    top: 2;
+    left: 10;
+}
+
+
+main div#PickupText1 p {
+    margin: 50px 400px;
+    text-align: left;
+    font-size: 1em;
+}
+
+/*  */
+
+main #Section5 {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+main #Section5 div {
+    margin: 0 auto;
+    width: 350px;
+}
+
+main #Section5 div img {
+    border-radius: 8px;
+}
+
+main #Section5 div h3 {
+    margin-top: 20px;
+}
+
+main #Section5 div p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+main #Section5 button {
+    display: block;
+    font-weight: bold;
+    border: 1px solid #3B3B41;
+    background-color: #3B3B41;
+    color: #FFFFFF;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+/* オーナーさま向けサービス */
+
+main #Section6 {
+    width: 1400px;
+    height: 310px;
+    background-color: #f7f7f7;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+main #Section6 h1 {
+    margin-bottom: 20;
+}
+
+main #Section6 img {
+    float: right;
+    margin: 0px 60px 0px 0px;
+    border-radius: 10px;
+}
+
+main #Section6 div {
+    margin-top: 30px;
+}
+
+main #Section6 div a {
+    display: block;
+    color: #000000;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+main #Section6 div a:hover {
+    opacity: 0.8;
+}
+
+main #Section6 div a::after {
+    background-image: url('../img/icon/icons-external-link.png');
+
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+
+    position: relative;
+    top: 15;
+    left: 10;
+}
+
+main #Section1.class3 img,
+main #Section1.class3 div {
+    margin-top: 100px;
+}
+
+/* カールセルスライダー */
+main #Section7::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 6550px;
+    left: -210;
+    width: 1910px;
+    height: 600px;
+    background-color: #f7f7f7;
+    z-index: -1;
+}
+
+main #Section7 #slide-items .regular li {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+main #Section7 #slide-items .regular li img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+main #Section7 #slide-items .regular li p:nth-of-type(1) {
+    padding: 20px 0;
+}
+
+main #Section7 #slide-items .regular li p:nth-of-type(2)::after {
+    content: "";
+    display: inline-block;
+    background-image: url('../img/icon/icons-arrow.png');
+    width: 1em;
+    height: 1em;
+    filter: invert(100%);
+    background-color: #FFFFFF;
+
+    position: relative;
+    top: 2;
+    left: 20;
+}
+
+/*  */
+
+main #Section8 div {
+    width: 300px;
+    height: 380px;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+main #Section8 div h3 {
+    margin: 0 auto;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+main #Section8 div p:nth-last-of-type(1) {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 10px 0 0 150px;
+}
+
+main #Section8 div h2 {
+    margin: 0 auto;
+    font-size: 1.3em;
+    padding: 0 0;
+}
+
+
+main #Section8 div p {
+    font-size: 0.8em;
+    padding: 10 0;
+}
+
+
+
+
+
+main #Section8 div img {
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+main #Section9 {
+    margin: 50px 0;
+}
+
+main #Section9 div {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+main #Section9 div div:hover {
+    opacity: 0.7;
+}
+
+main #Section9 div h1 {
+    margin: 30px 0 30px 0;
+    font-weight: bold;
+}
+
+main #Section9 div div {
+    border-top: 1px solid #dddada;
+}
+
+main #Section9 div div p {
+    display: inline-block;
+    margin: 20px;
+}
+
+main #Section9 div div p:nth-of-type(2) a {
+    background-color: #F7F7F7;
+    padding: 5px;
+}
+
+main #Section9 div div:nth-last-child(1) {
+    border-bottom: 1px solid #dddada;
+}
+
+main #Section9 div button {
+    font-weight: bold;
+    border: 1px solid #3B3B41;
+    background-color: #3B3B41;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main #Section9 button:hover {
+    opacity: 0.8;
+}
+
+/* footer */
+footer {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+footer>div {
+    margin: 300px auto 0 auto;
+    background-color: #3B3B41;
+    padding: 100px 100px 0px 600px;
+}
+
+footer>div>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div div img {
+    filter: brightness(10);
+}
+
+footer>div>div>p {
+    color: #FFFFFF;
+    margin-left: 21px;
+}
+
+footer div div:nth-of-type(1) {
+    float: left;
+}
+
+footer div div:nth-of-type(2) {
+    margin: 30px 0px 0px 0px;
+}
+
+footer div div:nth-of-type(2) p:nth-of-type(1) {
+    margin-left: 350px;
+}
+
+footer div div:nth-last-child(1) a {
+    color: #FFFFFF;
+}
+
+/* footer div div:nth-last-child(1) p {
+    
+} */
+
+footer div div a:hover,
+footer div div button:hover {
+    opacity: 0.8;
+}
+
+/* Footer-div1(グループ会社＋) */
+/* Footer-div2(関連サービス・サイト一覧＋) */
+
+#Footer-div1>button>p,
+#Footer-div2>button>p {
+    color: #FFFFFF;
+}
+
+#Footer-div1>button>p {
+    width: 120px;
+    margin-left: 345px;
+}
+
+#Footer-div2>button>p {
+    width: 230px;
+    margin-left: 340px;
+}
+
+
+#Footer-div1>ul,
+#Footer-div2>ul {
+    display: none;
+    margin-left: 350px;
+    list-style: none;
+}
+
+#Footer-div1>ul.active,
+#Footer-div2>ul.active {
+    display: block;
+}
+
+#Footer-div1>ul>li,
+#Footer-div2>ul>li {
+    margin-top: 10px;
+}
+
+/* Footer-div3 */
+#Footer-div3 {
+    display: flex;
+    margin-top: 100px;
+    margin-left: -104px;
+    padding-bottom: 50px;
+    width: 1000px;
+}
+
+#Footer-div3>p {
+    padding-left: 100px;
+}
+
+/* トグルメニュー(非表示) */
+header>section {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+
+
+    /* フローティングメニュー（非表示） */
+    #FloatingMenu>nav,
+    #Menu1>a {
+        display: none;
+    }
+
+    /* サイズ調整 */
+    header#FloatingMenu>div {
+        top: 0;
+    }
+
+    #FloatingMenu{
+        position: fixed;
+    }
+    
+
+
+    /* トグルメニュー（表示） */
+    header>section {
+        display: block;
+    }
+
+    #toggle-btn {
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+        left: 90vw;
+        cursor: pointer;
+    }
+
+    #toggle-btn span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background-color: #333;
+        border-radius: 2px;
+        left: 0;
+        transition: .5s;
+    }
+
+    #toggle-btn span:nth-of-type(1) {
+        top: 0px;
+    }
+
+    #toggle-btn span:nth-of-type(2) {
+        top: 10px;
+    }
+
+    #toggle-btn span:nth-of-type(3) {
+        top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+
+    main {
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    /* スライドショー */
+    #sliderArea {
+        width: 100vw;
+    }
+
+    #sliderArea ul img {
+        width: 90%;
+        /* 変更なし */
+        /* height: auto;
+        display: block;
+        object-fit: contain; */
+        margin: 0 auto;
+    }
+
+    main>p {
+        /* text-align: center;
+        line-height: 60px; */
+        font-size: 20px;
+        /* font-weight: bold; */
+    }
+
+    /* Housesの注文住宅～ */
+    main #Section1 {
+        /* display: flex;
+        position: relative; */
+        right: 0px;
+    }
+
+    main #Section1 img {
+        /* width: 1500px; */
+        height: auto;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 300px;
+        overflow: hidden;
+    }
+
+    /*
+    main #Section1 img,
+    main #Section1 p {
+        opacity: 0;
+        transition: transform 1.0s ease, opacity 1.0s ease;
+        transform: translateY(150px);
+    }
+
+    main #Section1 img.is-active,
+    main #Section1 p.is-active {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+
+    main #Section1 div {
+        line-height: 75px;
+        font-weight: bold;
+        margin-top: 330px;
+        margin-left: 80px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+
+    main #Section1 div p:nth-of-type(1) {
+        color: #7d7d7d;
+        font-size: 20px;
+    }
+
+ */
+    main #Section1 div {
+        line-height: 40px;
+        /* font-weight: bold; */
+        margin-top: 310px;
+        /* writing-mode: vertical-rl;
+        text-orientation: upright; */
+        margin-left: 20px;
+        margin-right: 5%;
+    }
+
+    main #Section1 div p:nth-of-type(1) {
+        /* color: #7d7d7d; */
+        font-size: 15px;
+    }
+
+    main #Section1 div p:nth-of-type(2),
+    main #Section1 div p:nth-of-type(3) {
+        font-size: 30px;
+    }
+
+    /* 
+    main #Section2 {
+        margin-top: 100px;
+    }
+    */
+
+    main #Section2 p {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 500;
+        width: 70vw;
+    }
+
+    /* main #Section2 button {
+        display: block;
+        font-weight: bold;
+        border: 1px solid #3B3B41;
+        background-color: #3B3B41;
+        color: #FFFFFF;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 5px;
+    } */
+
+    /*
+    main #Section2 button:hover {
+        opacity: 0.8;
+    } */
+
+    /* 積水ハウスの住宅展示場へ */
+
+    /* 画像 */
+    main #Section3 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #Section3>div:nth-child(1) {
+        order: 2;
+    }
+
+    #Section3>div:nth-child(2) {
+        order: 1;
+    }
+
+    main #Section3 div:nth-of-type(2) {
+        width: 75%;
+        height: auto;
+    }
+
+
+
+    /* main #Section3::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 1800px;
+        left: -210;
+        width: 1910px;
+        height: 2000px;
+        background-color: #F7F7F7;
+        z-index: -1;
+    }
+    */
+
+    main #Section3 div:nth-of-type(1) {
+        margin: 0px 50px;
+        width:  calc(92% - ((100vw - 375px) * ((400 - 75) / (767 - 375))));
+        height: auto;
+    }   
+    
+    main #Section3 div:nth-of-type(1) p:nth-of-type(1) {
+        /* font-weight: bold; */
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    main #Section3 div:nth-of-type(1) p:nth-of-type(2) {
+        /* font-weight: bold; */
+        font-size: calc(17px + ((100vw - 375px) * ((20 - 17) / (767 - 375))));
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    main #Section3 div:nth-of-type(1) p:nth-of-type(3) br{
+        display: none;
+    }
+
+
+    main #Section3 div:nth-of-type(1) p:nth-of-type(3) {
+        width: calc(20% + ((100vw - 375px) * ((45 - -200) / (767 - 375))));
+    }
+
+
+    main #Section3 div:nth-of-type(1) button {
+        /* display: block;
+        font-weight: bold;
+        border: 1px solid #3B3B41;
+        background-color: #3B3B41;
+        color: #FFFFFF; */
+        
+        margin: 0 auto;
+        padding: 20px;
+        margin: 25px calc(((100vw - 375px) * (220 / (767 - 375))));
+        border-radius: 5px;
+    }
+    /*
+    main #Section3 button:hover {
+        opacity: 0.8;
+    }
+
+    */
+    main #Section3 div img {
+        position: relative;
+        width: 100vw;
+        height: auto;
+        border-radius: 35px;
+        
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 100px;
+
+    }
+
+    main #Section3 div img:nth-of-type(1) {
+        width: 50vw;
+        top: 5vh;
+        left: calc(5vh + (100vw - 375px) * ((20 - 5) / (767 - 375)));
+        z-index: 1;
+    }
+
+    main #Section3 div img:nth-of-type(2) {
+        width: 50vw;
+        top: -50;
+        right: 95px;
+    }
+
+    main #Section3 div img:nth-of-type(3) {
+        width: 50vw;
+        object-fit: cover;
+        object-position: top;
+        top: calc(-2vh + (100vw - 375px) * ((-356 + 2) / (767 - 375)));
+        left: calc(-21vh + (100vw - 375px) * ((639 - 21) / (767 - 375)));
+    } 
+
+}
