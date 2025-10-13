@@ -67,11 +67,13 @@
                 <label for="message">お問い合わせ内容<span style="color:red;">*</span></label>
                 <textarea id="message" name="message" cols="40" row="10" required
                     placeholder="例）お問い合わせ内容を入力してください"></textarea><br>
+
+                <!-- honeypot（スパム対策） -->
+                <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+
                 <button type="submit">送信</button>
             </form>
             <p id="status"></p>
-            <!-- honeypot（スパム対策） -->
-            <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
             <script src="./js/Stage1/main.js"></script>
         </div>
     </main>
