@@ -26,7 +26,7 @@ document
 
     status.textContent = "送信中...";
 
-    const res = await fetch("/api/sendMail", {
+    const res = await fetch("api/sendMail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

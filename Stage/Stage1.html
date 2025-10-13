@@ -13,8 +13,9 @@
     <!-- Stage用 -->
     <link rel="stylesheet" href="css/Stage1/stage-style.css?version=20251013-version1.1">
 
-    <script src="./js/Stage1/stage-script.js?version=20251011-version1.1"></script>
-    <script src="./js/Stage1/yubinbango.js?version=20251011-version1.1"></script>
+    <!-- 入力チェック -->
+    <!-- <script src="./js/Stage1/stage-script.js?version=20251011-version1.1"></script>
+    <script src="./js/Stage1/yubinbango.js?version=20251011-version1.1"></script> -->
 
     <script src="https://www.google.com/recaptcha/api.js?render=6Le5d-grAAAAAGVOBeM0Q-zx2ldaqoln1rydUCDl"></script>
 
@@ -36,18 +37,19 @@
 
                 <label for="name">お名前<span style="color:red;">*</span></label>
                 <input type="text" id="name" name="name" required placeholder="山田 太郎"><br>
-
+                <!-- 
                 <label for="date">生年月日<span style="color:red;">*</span></label>
                 <input type="number" id="year" name="year" min="1925" max="" required placeholder="1970"><span>年</span>
                 <input type="number" id="month" name="month" min="1" max="12" required placeholder="12"><span>月</span>
                 <input type="number" id="day" name="day" min="1" max="31" required placeholder="31"><span>日</span>
-
+                -->
 
                 <label for="email">メールアドレス<span style="color:red;">*</span></label>
                 <input type="email" id="email" name="email" required placeholder="example@gmail.com"><br>
 
+                <!-- 
                 <input type="hidden" class="p-country-name" value="Japan">
-
+                
                 <label for="p-postal-code">郵便番号<span style="color:red;">*</span></label>
                 <input type="text" class="p-postal-code" id="p-postal-code" name="p-postal-code" pattern="\d{3}-\d{4}"
                     required placeholder="100-0001"><br>
@@ -63,7 +65,7 @@
                 <input type="tel" id="phone" name="phone" pattern="\d{2,4}-\d{2,4}-\d{4}" required
                     placeholder="03-3581-1500">
                 <p>ハイフンあり半角数字</p><br>
-
+                -->
                 <label for="message">お問い合わせ内容<span style="color:red;">*</span></label>
                 <textarea id="message" name="message" cols="40" row="10" required
                     placeholder="例）お問い合わせ内容を入力してください"></textarea><br>

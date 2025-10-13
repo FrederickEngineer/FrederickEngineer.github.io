@@ -5,6 +5,7 @@ export default async function handler(req, res) {
 
   const { name, email, message, token } = req.body;
 
+  console.debug("ここまで");
   // reCAPTCHA検証
   const verify = await fetch(
     `https://www.google.com/recaptcha/api/siteverify`,
