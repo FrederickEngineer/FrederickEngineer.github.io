@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="css/rest.css?version=20251011-version1.0">
+    <link rel="stylesheet" href="css/style.css?version=20251011-version1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js?version=20251011-version1.0"></script> -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Stage2</title>
+</head>
+
+<body>
+    <header>
+        <h1>Stage2（検証用サイト）</h1>
+        <h2>検証内容：BootStrap</h2>
+    </header>
+    <main style="margin: 40px;">
+        <div>
+            <div>
+                <h2>色指定</h2>
+                <p class="fw-bold">文章です。<i class="bi bi-globe-americas text-danger"></i></p>
+                <p class="text-warning">文章です。</p>
+                <p class="bg-dark text-info">文章です。</p>
+                <p>これは文章中の<a href="#" class="link-danger">リンク</a>です</p>
+            </div>
+            <div>
+                <h2>文字サイズ(fs-X)</h2>
+                <p class="fs-1">テキスト</p>
+                <p class="fs-2">テキスト</p>
+                <p class="fs-3">テキスト</p>
+                <p class="fs-4">テキスト</p>
+                <p class="fs-5">テキスト</p>
+                <p class="fs-6">テキスト</p>
+            </div>
+            <div>
+                <h2>文字サイズ(fs-X)、スタイル</h2>
+                <p class="fw-bold">太文字</p>
+                <p class="fst-italic">斜体</p>
+            </div>
+            <div>
+                <h2>揃え</h2>
+                <p class="text-start">左</p>
+                <p class="text-center">中央</p>
+                <p class="text-end">右</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>リストマーカ削除</h2>
+                <ol class="list-unstyled">
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                </ol>
+                <ul class="list-unstyled">
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                </ul>
+            </div>
+            <div>
+                <h2>グローバルナビ</h2>
+                <ul class="list-inline">
+                    <li class="list-inline-item">リスト項目</li>
+                    <li class="list-inline-item">リスト項目</li>
+                    <li class="list-inline-item">リスト項目</li>
+                    <li class="list-inline-item">リスト項目</li>
+                    <li class="list-inline-item">リスト項目</li>
+                </ul>
+            </div>
+            <div>
+                <h2>テーブル</h2>
+                <!-- table-danger テーブルの背景色
+                    table-striped　テーブルの縞々
+                    table-bordered　テーブルの縦線
+                    table-borderless テーブル線なし
+                -->
+
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap">
+                        <thead>
+                            <tr>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                                <th>見出し</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                            </tr>
+                            <tr>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                            </tr>
+                            <tr>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                            </tr>
+                            <tr>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                            </tr>
+                            <tr>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                                <td>データ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h2>コンテンツ</h2>
+
+                <h3>画像レスポンシブ対応</h3>
+                <div class="bg-danger" style="padding:50px;">
+                    <img src="./img/3251994-1.png" class="img-fluid" alt="">
+                </div>
+
+                <h3>角丸</h3>
+                <div class="bg-info rounded-1" style="padding: 200px;margin: 5px;">コンテンツ</div>
+                <div class="bg-info rounded-2" style="padding: 200px;margin: 5px;">コンテンツ</div>
+                <div class="bg-info rounded-3" style="padding: 200px;margin: 5px;">コンテンツ</div>
+
+                <h3>シャドー</h3>
+                <div class="shadow-sm" style="padding: 200px;margin: 5px;">コンテンツ</div>
+                <div class="shadow" style="padding: 200px;margin: 5px;">コンテンツ</div>
+                <div class="shadow-lg" style="padding: 200px;margin: 5px;">コンテンツ</div>
+                <div class="shadow-none" style="padding: 200px;margin: 5px;">コンテンツ</div>
+
+                <h3>ボックスモデル</h3>
+                <div class="bg-info" style="height: 300px;">
+                    <div class="bg-success w-25 h-25">コンテンツ</div>
+                </div>
+
+                <div class="border">コンテンツ</div>
+                <div class="border border-2 border-info">コンテンツ</div>
+
+                <div class="bg-danger">コンテンツ</div>
+
+                <div class="m-1">
+                    <div class="bg-info">コンテンツ</div>
+                </div>
+
+                <div class="my-md-5">
+                    <div class="bg-danger">コンテンツ</div>
+                </div>
+
+                <div class="my-md-5">
+                    <div class="bg-info mx-auto w-50">コンテンツ</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="border border-3">
+            <h2>レイアウト</h2>
+            <div>
+                <h3>表示/非表示</h3>
+                <section class="d-none d-lg-block">
+                    <ul class="list-unstyled">
+                        <li class="d-inline">項目2</li>
+                        <li class="d-inline">項目3</li>
+                        <li class="d-inline">項目4</li>
+                        <li class="d-inline">項目5</li>
+                        <li class="d-inline">項目1</li>
+                    </ul>
+                </section>
+                <h3>フロート</h3>
+                <section class="bg-dark p-2 clearfix">
+                    <div class="bg-danger w-25 float-start">コンテンツ</div>
+                    <div class="bg-warning w-25 float-end">コンテンツ</div>
+                </section>
+
+                <section class="bg-secondary">次のセクション</section>
+
+                <h3>ポジション</h3>
+                <div class="bg-secondary position-relative" style="height: 300px;">
+                    <div class="bg-danger w-25 position-absolute end-0 bottom-0">コンテンツ</div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
